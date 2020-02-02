@@ -1,3 +1,19 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.fab {
+  bottom: 0;
+  position: fixed;
+  margin: 1em;
+  right: 0;
+  z-index: 999;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
