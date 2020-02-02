@@ -1,4 +1,34 @@
 <% content_for :page_title, 'Index' %>
+
+  <section class='tabs is-centered'>
+      <ul>
+        <li class="is-active">
+          <a>
+            <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+            <span>News</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+            <span>Innovation</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
+            <span>Training</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+            <span>Accolades</span>
+          </a>
+        </li>
+      </ul>
+  </section>
+
   <section class ='section'>
     <div class='container'>
       <% @posts.each do |post| %>

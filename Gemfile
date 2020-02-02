@@ -27,6 +27,9 @@ gem 'pg', '~> 1.2', '>= 1.2.2'
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
+# font awesome for icons
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
