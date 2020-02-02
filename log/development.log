@@ -1691,3 +1691,205 @@ Processing by ServiceWorkerController#service_worker as */*
 Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2631)
 
 
+Started GET "/" for ::1 at 2020-02-02 19:24:09 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4501)
+Completed 200 OK in 100ms (Views: 83.3ms | ActiveRecord: 4.9ms | Allocations: 13239)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-02 19:24:10 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.4ms | Allocations: 1169)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2795)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:24:12 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 4.5ms | Allocations: 2260)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3929)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:24:12 +0530
+Processing by PostsController#index as */*
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 675)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 3.2ms | Allocations: 3229)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:24:27 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 671)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.6ms | Allocations: 2826)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:25:00 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 917)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 58.8ms | ActiveRecord: 2.2ms | Allocations: 6410)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-02 19:25:01 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.2ms | Allocations: 1118)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2685)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:25:14 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 676)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 53.2ms | ActiveRecord: 4.6ms | Allocations: 4891)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:25:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 5.5ms | Allocations: 2240)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3726)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:25:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 4.3ms | Allocations: 2011)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2458)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:27:17 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 1.9ms | Allocations: 4588)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:27:19 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.7ms | Allocations: 2247)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 3897)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:30:36 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.7ms | Allocations: 4597)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:30:38 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.7ms | Allocations: 2241)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 3881)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:30:41 +0530
+Processing by PostsController#index as */*
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 667)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 4328)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:30:46 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 50.5ms | ActiveRecord: 4.0ms | Allocations: 3318)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:30:48 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.3ms | Allocations: 2011)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2457)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:30:55 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.0ms | ActiveRecord: 4.5ms | Allocations: 3241)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:30:55 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 4.4ms | Allocations: 2011)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2456)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:30:55 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.6ms | Allocations: 2011)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2457)
+
+
+Started GET "/" for ::1 at 2020-02-02 19:31:11 +0530
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 50.9ms | ActiveRecord: 4.6ms | Allocations: 6134)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:31:12 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.8ms | Allocations: 2240)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 3884)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-02 19:31:12 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.7ms | Allocations: 2011)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2460)
+
+
