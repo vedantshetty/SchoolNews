@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   end
   
 # Service Worker Routes
-get '/service-worker.js' => "service_worker#service_worker"
-get '/manifest.json' => "service_worker#manifest"
+get '/service-worker.js', to: "service_worker#service_worker"
+get '/manifest.json', to: "service_worker#manifest"
 
   root 'posts#index'
 
