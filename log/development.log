@@ -10321,3 +10321,76 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 150ms (Views: 144.9ms | ActiveRecord: 0.0ms | Allocations: 11009)
 
 
+Started POST "/users" for ::1 at 2020-02-03 23:36:40 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"/V4xMyRhIVmEnYs5Zb/grVa7O//OzxtsDt9Ky+ofFdAotU2DOjSVlX8EOwd27ECfEKRYG7DoIlObLdpMXZw7QA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.0ms | Allocations: 5419)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 14325)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 23:36:42 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.2ms | Allocations: 2059)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started POST "/users" for ::1 at 2020-02-03 23:36:52 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"pqdYkWQRruOa+PHd+oHcCdCOZy2cESMVfMF/1SZAU9BDpJWwRvS+SGO97VpPbyE/GmUhQjZEuO/rB1XKtNLCIg==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vshetty.vs@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 299ms (Views: 23.1ms | ActiveRecord: 1.1ms | Allocations: 18175)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 23:36:55 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.5ms | Allocations: 2059)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users" for ::1 at 2020-02-03 23:37:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
