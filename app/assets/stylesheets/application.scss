@@ -15,4 +15,11 @@
  *= require_tree
  */
 
- @import 'bulma'
+
+ @import 'font-awesome';
+ @import 'bulma';
+
+ /* add custom stylesheets here */
+ @import 'comments.scss';
+ @import 'posts.scss';
+ @import 'registration.scss';

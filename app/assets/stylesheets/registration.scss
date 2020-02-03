@@ -18,7 +18,7 @@ html, body {
 
 .devise .input {
    border-width: 0;
-   background-color: rgba($color: blue, $alpha: 0.2);
+   background-color: rgba(0,0,255, 0.2);
 
 }
 
@@ -26,7 +26,7 @@ html, body {
   border-width: 0px;
   color: white;
   width: 360px;
-  background-color: rgba($color: blue, $alpha: 0);
+  background-color: transparent
 }
 
 .devise input:focus {
@@ -38,7 +38,7 @@ html, body {
   width: fit-content;
 }
 .devise .button {
-  background-color: rgba($color: blue, $alpha: 0.4);
+  background-color: rgba(0,0,255, 0.4);
   padding-left: 160px;
   padding-right: 160px;
 }
