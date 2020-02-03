@@ -10394,3 +10394,33 @@ puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
 puma (4.3.1) lib/puma/server.rb:472:in `process_client'
 puma (4.3.1) lib/puma/server.rb:328:in `block in run'
 puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-03 23:43:55 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 258)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 23:43:55 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 71.2ms | Allocations: 8321)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 855ms (Views: 851.0ms | ActiveRecord: 0.0ms | Allocations: 209934)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 23:43:57 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.4ms | Allocations: 2295)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4251)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 23:43:57 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.0ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
