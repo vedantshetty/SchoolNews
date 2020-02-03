@@ -5680,3 +5680,84 @@ Processing by ServiceWorkerController#service_worker as */*
 Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2521)
 
 
+Started GET "/" for ::1 at 2020-02-03 15:27:23 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 289)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 15:27:23 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 134)
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 1054)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 6962)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:27:26 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.4ms | Allocations: 2059)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:27:29 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 48.6ms | ActiveRecord: 7.8ms | Allocations: 7661)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 15:27:30 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.7ms | Allocations: 960)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:27:32 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.0ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2689)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:27:33 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 15:27:33 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1054)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 6500)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:27:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:28:36 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 1.8ms | Allocations: 7685)
+
+
