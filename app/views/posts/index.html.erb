@@ -1,6 +1,22 @@
-<% content_for :page_title, 'Index' %>
-
-  <section class='tabs is-centered is-medium'>
+<section class="hero is-navy is-small">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-end">
+                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+    </section>
+  <section class='tabs is-centered is-medium is-navy'>
       <ul>
         <li class="tab is-active" onclick="openTab(event,'news')">
           <a>
@@ -48,6 +64,7 @@
               <%=dateFormater(post.created_at) %>
             </div>
             <div class ='comment-count'>
+              Published by
               <span class ='tag is-rounded'>
                 Comments
               </span>

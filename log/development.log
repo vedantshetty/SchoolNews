@@ -5761,3 +5761,1320 @@ Processing by PostsController#index as */*
 Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 1.8ms | Allocations: 7685)
 
 
+Started GET "/" for ::1 at 2020-02-03 15:45:12 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 4347)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 70.9ms | ActiveRecord: 14.7ms | Allocations: 26019)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 15:45:12 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.3ms | Allocations: 1172)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3096)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:45:14 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 20.5ms | Allocations: 2302)
+Completed 200 OK in 36ms (Views: 30.0ms | ActiveRecord: 0.0ms | Allocations: 4273)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:45:17 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:45:17 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 15:45:17 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 3.6ms | Allocations: 640)
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 2989)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 61.9ms | ActiveRecord: 0.0ms | Allocations: 9845)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 15:45:17 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1058)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 6507)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:45:19 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.7ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/" for ::1 at 2020-02-03 15:59:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:59:43 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.2ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 15:59:48 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 40ms (ActiveRecord: 4.9ms | Allocations: 2121)
+
+
+Started GET "/" for ::1 at 2020-02-03 15:59:48 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 63.9ms | ActiveRecord: 4.9ms | Allocations: 7586)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 15:59:49 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 5.2ms | Allocations: 964)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 1341)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 15:59:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.2ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:04:58 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:04:58 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 134)
+  Rendered /home/vedant/.rvm/gems/ruby-2.6.3/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 6506)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:05:00 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 45.3ms | Allocations: 2059)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms | Allocations: 2526)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:17:43 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 53.7ms | ActiveRecord: 3.0ms | Allocations: 7535)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:17:44 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.4ms | Allocations: 960)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:17:45 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.9ms | Allocations: 2059)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 2684)
+
+
+Started GET "/posts/new" for ::1 at 2020-02-03 16:17:47 +0530
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 205.9ms | Allocations: 21065)
+  Rendered posts/new.html.erb within layouts/application (Duration: 209.8ms | Allocations: 21382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 238ms (Views: 217.8ms | ActiveRecord: 1.4ms | Allocations: 28219)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:17:53 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 733)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 53.0ms | ActiveRecord: 5.2ms | Allocations: 7554)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:24:02 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 18.4ms | ActiveRecord: 2.2ms | Allocations: 9260)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:24:03 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.1ms | Allocations: 1132)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3006)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:24:04 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.6ms | Allocations: 2292)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:24:12 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 33.1ms | ActiveRecord: 3.4ms | Allocations: 9133)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:24:12 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.7ms | Allocations: 1126)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:24:14 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2288)
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 4243)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:30:48 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 568ms (Views: 558.8ms | ActiveRecord: 2.6ms | Allocations: 125853)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:30:49 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.8ms | Allocations: 1133)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:30:50 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 7647)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:30:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 4.5ms | Allocations: 2292)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4257)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:30:50 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.8ms | Allocations: 964)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:30:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.1ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:31:03 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 1.1ms | Allocations: 7784)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:33:43 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1083)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 22.9ms | ActiveRecord: 1.3ms | Allocations: 9226)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:33:44 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.0ms | Allocations: 1133)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:33:45 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 6.7ms | Allocations: 2292)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4252)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:34:02 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 738)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 607ms (Views: 584.4ms | ActiveRecord: 3.1ms | Allocations: 124851)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:34:03 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.6ms | Allocations: 964)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:34:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.5ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 2682)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:34:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 572ms (Views: 553.0ms | ActiveRecord: 2.3ms | Allocations: 125800)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:34:17 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 14.2ms | Allocations: 961)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 1341)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:34:18 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 21.5ms | ActiveRecord: 2.1ms | Allocations: 7707)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:34:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.2ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:34:19 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.5ms | Allocations: 963)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1359)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:34:20 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.3ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 2692)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:35:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 580ms (Views: 574.5ms | ActiveRecord: 0.9ms | Allocations: 126274)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:35:17 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.4ms | Allocations: 963)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1359)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:35:19 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.7ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 2687)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:36:38 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 0.8ms | Allocations: 7874)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:38:06 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 628ms (Views: 604.3ms | ActiveRecord: 3.4ms | Allocations: 125803)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:38:07 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.7ms | Allocations: 960)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:38:09 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.3ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2685)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:38:30 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 593ms (Views: 571.3ms | ActiveRecord: 2.7ms | Allocations: 126271)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:38:31 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.0ms | Allocations: 960)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:38:33 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.7ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2695)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:39:58 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 614ms (Views: 591.5ms | ActiveRecord: 2.8ms | Allocations: 125808)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:39:59 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.9ms | Allocations: 960)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:40:01 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.6ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:41:07 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 580ms (Views: 558.4ms | ActiveRecord: 3.4ms | Allocations: 126242)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:41:08 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 14.1ms | Allocations: 961)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 1376)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:41:09 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.2ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 2694)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:41:23 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 729)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 645ms (Views: 620.9ms | ActiveRecord: 3.3ms | Allocations: 126208)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:41:24 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 9.0ms | Allocations: 960)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:41:25 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.8ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:43:17 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:71
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 9310)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:43:18 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.0ms | Allocations: 1132)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3006)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:43:20 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 49.1ms | Allocations: 2294)
+Completed 200 OK in 65ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 4264)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 16:43:24 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 16.9ms | Allocations: 10548)
+  Rendered posts/show.html.erb within layouts/application (Duration: 57.2ms | Allocations: 21532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 59.7ms | ActiveRecord: 6.2ms | Allocations: 29123)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 16:44:26 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 17.4ms | Allocations: 5686)
+  Rendered posts/show.html.erb within layouts/application (Duration: 31.7ms | Allocations: 7747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 41.1ms | ActiveRecord: 4.4ms | Allocations: 16401)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:44:27 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 23.4ms | Allocations: 1131)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 3066)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:44:28 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.5ms | Allocations: 2295)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:44:32 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:39
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1083)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 1.1ms | Allocations: 8201)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:44:32 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.5ms | Allocations: 964)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:44:34 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.5ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:44:53 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1218)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 9297)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:44:54 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.5ms | Allocations: 1130)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3004)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:44:55 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.6ms | Allocations: 2288)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 4243)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 16:44:59 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 19.0ms | Allocations: 5699)
+  Rendered posts/show.html.erb within layouts/application (Duration: 28.8ms | Allocations: 7761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 33.4ms | ActiveRecord: 2.8ms | Allocations: 15249)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:45:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1940)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:45:07 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 7731)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:45:07 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.6ms | Allocations: 964)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:45:09 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.5ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:45:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1946)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:45:40 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 1.0ms | Allocations: 9305)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:45:40 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.8ms | Allocations: 1126)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:45:42 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.1ms | Allocations: 2288)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 4239)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:46:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1939)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:46:13 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1217)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 518ms (Views: 512.8ms | ActiveRecord: 0.7ms | Allocations: 127405)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:46:14 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.9ms | Allocations: 1133)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:46:16 +0530
+Started GET "/" for ::1 at 2020-02-03 16:46:16 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 23.3ms | Allocations: 2613)
+Completed 200 OK in 53ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 4706)
+
+
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 813)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 13.7ms | ActiveRecord: 3.0ms | Allocations: 7841)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:46:16 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.6ms | Allocations: 964)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:46:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.9ms | Allocations: 2059)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:46:24 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 1944)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:46:24 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.9ms | Allocations: 7717)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:46:24 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.4ms | Allocations: 960)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:46:26 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 1.9ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2696)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:46:38 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:70
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 35.0ms | ActiveRecord: 2.6ms | Allocations: 7707)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:46:39 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.3ms | Allocations: 960)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:46:40 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.8ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2696)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:47:29 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1191)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 512ms (Views: 504.7ms | ActiveRecord: 0.6ms | Allocations: 127823)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:47:30 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.9ms | Allocations: 1133)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3007)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:47:31 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.5ms | Allocations: 2292)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 4254)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:47:34 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 1943)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:47:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.5ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 2706)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:47:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 1954)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:47:35 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.7ms | Allocations: 7773)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:47:35 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.4ms | Allocations: 964)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1341)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:47:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.4ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2689)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:47:46 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 7855)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:48:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.1ms | Allocations: 9269)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:48:16 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 11.8ms | Allocations: 1172)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3632)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:48:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.5ms | Allocations: 2288)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 4238)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 16:48:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1942)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:48:21 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.6ms | ActiveRecord: 0.9ms | Allocations: 7730)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:48:21 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.7ms | Allocations: 965)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1343)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:48:23 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.3ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2692)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:48:30 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:61
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 41.4ms | ActiveRecord: 2.0ms | Allocations: 7705)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:48:30 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.9ms | Allocations: 960)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:48:32 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.8ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2689)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:49:21 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 9262)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:49:21 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.4ms | Allocations: 1130)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3004)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:49:22 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.0ms | Allocations: 2292)
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 4257)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:49:25 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 1.1ms | Allocations: 7871)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:49:59 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 1.2ms | Allocations: 9255)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:49:59 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 5.1ms | Allocations: 1126)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3632)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:50:01 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.1ms | Allocations: 2288)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 4241)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:50:25 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 16.5ms | ActiveRecord: 1.5ms | Allocations: 9261)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:50:25 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.3ms | Allocations: 1157)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3018)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:50:27 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.0ms | Allocations: 2288)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 4238)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:50:38 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 16.6ms | ActiveRecord: 2.0ms | Allocations: 9253)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:50:38 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.5ms | Allocations: 1126)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:50:40 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.2ms | Allocations: 2289)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4246)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:50:41 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 1.0ms | Allocations: 7873)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:51:09 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 10.2ms | ActiveRecord: 0.6ms | Allocations: 7711)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:51:09 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.6ms | Allocations: 964)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:51:11 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.6ms | Allocations: 2059)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2685)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:51:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1190)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 0.9ms | Allocations: 9267)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:51:16 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.6ms | Allocations: 1130)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3004)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:51:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.1ms | Allocations: 2292)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 4264)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:52:13 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 1185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 40.1ms | ActiveRecord: 2.1ms | Allocations: 9257)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:52:13 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.8ms | Allocations: 1126)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:52:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.2ms | Allocations: 2288)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2020-02-03 16:52:15 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:55
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 0.8ms | Allocations: 7871)
+
+
