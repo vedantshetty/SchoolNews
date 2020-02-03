@@ -7078,3 +7078,2916 @@ Processing by PostsController#index as */*
 Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 0.8ms | Allocations: 7871)
 
 
+Started GET "/" for ::1 at 2020-02-03 16:56:35 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.7ms | Allocations: 9266)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 16:56:35 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.6ms | Allocations: 1126)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2987)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 16:56:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.3ms | Allocations: 2288)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 4239)
+
+
+Started GET "/users/new" for ::1 at 2020-02-03 17:04:50 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:04:55 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 547)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 39.3ms | Allocations: 11582)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 510ms (Views: 508.7ms | ActiveRecord: 0.0ms | Allocations: 176702)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:04:58 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 124)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 25.3ms | Allocations: 6985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 13247)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:04:58 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.7ms | Allocations: 2292)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:04:58 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.4ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:05:09 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 6949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 14029)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:05:11 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 6.7ms | Allocations: 2288)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 4223)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:05:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 496)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.2ms | Allocations: 6959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 14035)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:05:23 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.9ms | Allocations: 2292)
+Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 4244)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:05:33 +0530
+Processing by Devise::RegistrationsController#new as */*
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 6177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 12491)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:07:23 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 6947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 592ms (Views: 589.9ms | ActiveRecord: 0.0ms | Allocations: 133685)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img_girl.jpg"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.2.1) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.2.1) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.2.1) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.2.1) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:07:25 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 5.5ms | Allocations: 2288)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 4235)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:10:27 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 6144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 593ms (Views: 591.6ms | ActiveRecord: 0.0ms | Allocations: 171179)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:10:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.8ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:11:03 +0530
+Processing by Devise::RegistrationsController#new as */*
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 11756)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:12:05 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 6946)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 14166)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:12:07 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.0ms | Allocations: 2292)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:13:27 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 62.3ms | Allocations: 6947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 608ms (Views: 601.6ms | ActiveRecord: 0.0ms | Allocations: 135076)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:13:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.3ms | Allocations: 2295)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 4245)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:13:51 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 52.2ms | Allocations: 6144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 573ms (Views: 568.3ms | ActiveRecord: 0.0ms | Allocations: 133320)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:13:54 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:14:09 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 71.3ms | Allocations: 6135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 560ms (Views: 556.0ms | ActiveRecord: 0.0ms | Allocations: 132896)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:14:12 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.6ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2510)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:14:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 32.5ms | Allocations: 6135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 555ms (Views: 552.3ms | ActiveRecord: 0.0ms | Allocations: 132489)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:14:24 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.5ms | Allocations: 2059)
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:14:32 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 79.0ms | Allocations: 6945)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 108.2ms | ActiveRecord: 0.0ms | Allocations: 14177)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:14:34 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.3ms | Allocations: 2294)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4243)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:16:11 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 14157)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:16:12 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 59.0ms | Allocations: 6134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 70.9ms | ActiveRecord: 0.0ms | Allocations: 11774)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:16:14 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.5ms | Allocations: 2288)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 4223)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:16:22 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.9ms | Allocations: 6942)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.0ms | Allocations: 14169)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:16:24 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.6ms | Allocations: 2288)
+Completed 200 OK in 38ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 4225)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:16:28 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 6137)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 531ms (Views: 529.2ms | ActiveRecord: 0.0ms | Allocations: 131111)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:16:31 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2509)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:17:04 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 6958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 498ms (Views: 496.6ms | ActiveRecord: 0.0ms | Allocations: 135690)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:17:06 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.7ms | Allocations: 2295)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 4241)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:17:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 6144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 480ms (Views: 479.1ms | ActiveRecord: 0.0ms | Allocations: 132355)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:17:29 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.9ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:17:29 +0530
+Processing by Devise::RegistrationsController#new as */*
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 6135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 11761)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:17:39 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 6134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 472ms (Views: 471.5ms | ActiveRecord: 0.0ms | Allocations: 132814)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:17:41 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.4ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 2511)
+
+
+Started GET "/posts/new" for ::1 at 2020-02-03 17:17:57 +0530
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 280)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:17:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 8318)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 14729)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-03 17:18:16 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mcN/v/rh/S7hcA6vPeYCkEpJIMXy2CPr4u5uxMcetv98+BjiURCvsiP5iJnXDbOEIpY+zvO9SCNyK307zbKFQg==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "vshetty.vs@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.6ms | Allocations: 2200)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"mcN/v/rh/S7hcA6vPeYCkEpJIMXy2CPr4u5uxMcetv98+BjiURCvsiP5iJnXDbOEIpY+zvO9SCNyK307zbKFQg==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 8097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 14315)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:18:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.5ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-03 17:18:24 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"1pD9yZWke3GxxN0HG60ALeiPcxeiFv/Vk/dGFbfHENyvFeNKPZPeF3mT9CCK93Fp39Jh5T+hMhtGTPVmvc4yeQ==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "vshetty.vs@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms | Allocations: 1829)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"1pD9yZWke3GxxN0HG60ALeiPcxeiFv/Vk/dGFbfHENyvFeNKPZPeF3mT9CCK93Fp39Jh5T+hMhtGTPVmvc4yeQ==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 8100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 144ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 13744)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:18:26 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-03 17:18:28 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"6UtUdC8Mcu0YogSyduOYL6tcyD4x0uL0pKcx+xwmCP6Qzkr3hzvXi9D1LZXnuelrnAHazKxlLzpxHIKIFi8qWw==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "vshetty.vs@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.4ms | Allocations: 1822)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"6UtUdC8Mcu0YogSyduOYL6tcyD4x0uL0pKcx+xwmCP6Qzkr3hzvXi9D1LZXnuelrnAHazKxlLzpxHIKIFi8qWw==", "user"=>{"email"=>"vshetty.vs@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 8100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 142ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 13745)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:18:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.8ms | Allocations: 2059)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/" for ::1 at 2020-02-03 17:18:37 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 16.3ms | ActiveRecord: 2.3ms | Allocations: 8948)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 17:18:37 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.3ms | Allocations: 1137)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2908)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:18:39 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.0ms | Allocations: 2059)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2695)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:19:44 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 8886)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 523ms (Views: 521.5ms | ActiveRecord: 0.0ms | Allocations: 137396)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:19:46 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.0ms | Allocations: 2295)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/" for ::1 at 2020-02-03 17:19:54 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.8ms | ActiveRecord: 0.8ms | Allocations: 8929)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 17:19:55 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.6ms | Allocations: 1139)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 3500)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:19:56 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.2ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 17:20:00 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.2ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 36.1ms | Allocations: 5719)
+  Rendered posts/show.html.erb within layouts/application (Duration: 68.0ms | Allocations: 7815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 76.6ms | ActiveRecord: 6.6ms | Allocations: 15568)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:23:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.6ms | Allocations: 8888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 886ms (ActiveRecord: 0.0ms | Allocations: 455172)
+
+
+
+NameError - undefined local variable or method `user_signed_in' for #<#<Class:0x000055a86cdf5768>:0x000055a86cdee5a8>
+Did you mean?  user_signed_in?:
+  app/views/layouts/application.html.erb:34
+
+Started POST "/__better_errors/927109d8b2edede1/variables" for ::1 at 2020-02-03 17:23:22 +0530
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:23:24 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.9ms | Allocations: 2298)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 4252)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:23:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 84.9ms | Allocations: 8894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 108.8ms | ActiveRecord: 0.0ms | Allocations: 16279)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:23:42 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.8ms | Allocations: 2288)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 4231)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:23:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 50.4ms | Allocations: 8099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 13843)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:23:45 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.6ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/" for ::1 at 2020-02-03 17:23:50 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 1.0ms | Allocations: 8933)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 17:23:50 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.6ms | Allocations: 1137)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2850)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:23:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.0ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 2689)
+
+
+Started GET "/" for ::1 at 2020-02-03 17:24:08 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.7ms | Allocations: 9519)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 17:24:09 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.5ms | Allocations: 1131)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2996)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:24:10 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 6.0ms | Allocations: 2288)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4236)
+
+
+Started GET "/" for ::1 at 2020-02-03 17:24:35 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 32.8ms | ActiveRecord: 5.4ms | Allocations: 7932)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:24:39 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 551)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.8ms | Allocations: 8895)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.0ms | Allocations: 15694)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:24:41 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.1ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:25:09 +0530
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 8094)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 13828)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:28:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 68.6ms | Allocations: 8090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 565ms (Views: 558.8ms | ActiveRecord: 0.0ms | Allocations: 134546)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:28:59 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.4ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:29:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 71.8ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 557ms (Views: 551.6ms | ActiveRecord: 0.0ms | Allocations: 135041)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:30:02 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.3ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:30:14 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 77.3ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 563ms (Views: 559.1ms | ActiveRecord: 0.0ms | Allocations: 135012)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:30:16 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.8ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 2529)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:30:24 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 34.5ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 512ms (Views: 505.1ms | ActiveRecord: 0.0ms | Allocations: 134558)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:30:27 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.7ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:30:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 77.6ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 90.2ms | ActiveRecord: 0.0ms | Allocations: 13882)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:30:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.7ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:32:06 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.5ms | Allocations: 8090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 522ms (Views: 519.9ms | ActiveRecord: 0.0ms | Allocations: 135032)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:32:08 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:32:48 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 65.3ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 572ms (Views: 567.8ms | ActiveRecord: 0.0ms | Allocations: 135913)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:32:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.0ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:32:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 74.7ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 601ms (Views: 592.6ms | ActiveRecord: 0.0ms | Allocations: 135475)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:33:00 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.6ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2524)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:33:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 92.1ms | Allocations: 8100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 556ms (Views: 549.4ms | ActiveRecord: 0.0ms | Allocations: 135006)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:33:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.4ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:33:23 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 507ms (Views: 506.0ms | ActiveRecord: 0.0ms | Allocations: 135481)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:33:25 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 6.7ms | Allocations: 2059)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:37:52 +0530
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 25.8ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 13836)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:39:46 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 8887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 510ms (Views: 509.3ms | ActiveRecord: 0.0ms | Allocations: 137915)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:39:49 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.9ms | Allocations: 2295)
+Completed 200 OK in 43ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 4250)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:40:05 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.2ms | Allocations: 8892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 498ms (Views: 497.4ms | ActiveRecord: 0.0ms | Allocations: 136996)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:40:08 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 5.9ms | Allocations: 2295)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4248)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:42:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 73.7ms | Allocations: 8107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 564ms (Views: 558.1ms | ActiveRecord: 0.0ms | Allocations: 134574)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:42:22 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:42:34 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 79.7ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 618ms (Views: 612.2ms | ActiveRecord: 0.0ms | Allocations: 135454)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:42:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.5ms | Allocations: 2059)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:43:02 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 55.7ms | Allocations: 8098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 542ms (Views: 539.5ms | ActiveRecord: 0.0ms | Allocations: 135013)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:43:04 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.7ms | Allocations: 2059)
+Completed 200 OK in 26ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:43:41 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.2ms | Allocations: 6416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 12759)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:44:06 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 73.3ms | Allocations: 6957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.0ms | Allocations: 14256)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:44:08 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 5.7ms | Allocations: 2292)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4251)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:45:58 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 56.5ms | Allocations: 6958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 80.3ms | ActiveRecord: 0.0ms | Allocations: 14246)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:46:00 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.9ms | Allocations: 2288)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 4226)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:46:07 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 46.7ms | Allocations: 6958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.0ms | Allocations: 14254)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:46:09 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 7.4ms | Allocations: 2288)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4225)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:46:15 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 68.3ms | Allocations: 6955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 114.6ms | ActiveRecord: 0.0ms | Allocations: 14251)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:46:17 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 20.3ms | Allocations: 2295)
+Completed 200 OK in 43ms (Views: 37.1ms | ActiveRecord: 0.0ms | Allocations: 4252)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:47:03 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 6975)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms | Allocations: 14278)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:47:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 22.8ms | Allocations: 2288)
+Completed 200 OK in 49ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 4236)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:47:57 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 19.0ms | Allocations: 6992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 14290)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:47:59 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.5ms | Allocations: 2288)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 4242)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:48:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 6968)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 14260)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:48:28 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.0ms | Allocations: 2288)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4235)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:48:45 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 6956)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms | Allocations: 14250)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:48:48 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.8ms | Allocations: 2288)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 4229)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:49:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 8333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 14746)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:49:14 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.4ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 17:49:44 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 6154)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 11831)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:49:46 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 90.1ms | Allocations: 8091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 105.2ms | ActiveRecord: 0.0ms | Allocations: 13830)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:50:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.9ms | Allocations: 8888)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 16270)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:50:14 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.8ms | Allocations: 2292)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:51:26 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 8883)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 499ms (Views: 498.0ms | ActiveRecord: 0.0ms | Allocations: 137949)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:51:29 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2295)
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:51:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 8107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 13893)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:51:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.9ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:52:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 551)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 91.2ms | Allocations: 8897)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 111.8ms | ActiveRecord: 0.0ms | Allocations: 16280)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:52:37 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.8ms | Allocations: 2292)
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4249)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:53:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 8890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 16269)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:53:17 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.0ms | Allocations: 2288)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 4229)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:53:28 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 8889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms | Allocations: 16255)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:53:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.5ms | Allocations: 2288)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 4233)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:59:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 48.7ms | Allocations: 8890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 559ms (Views: 554.2ms | ActiveRecord: 0.0ms | Allocations: 137464)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:59:17 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.3ms | Allocations: 2295)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 4253)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:59:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 43.8ms | Allocations: 8111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 540ms (Views: 535.6ms | ActiveRecord: 0.0ms | Allocations: 135032)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 17:59:53 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.5ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 17:59:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 34.9ms | Allocations: 8102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 582ms (Views: 577.4ms | ActiveRecord: 0.0ms | Allocations: 135492)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:00:02 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.1ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 18:00:20 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 8102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 524ms (Views: 522.3ms | ActiveRecord: 0.0ms | Allocations: 135499)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:00:23 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 4.7ms | Allocations: 2059)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 2526)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 18:00:38 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 42.0ms | Allocations: 8102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 539ms (Views: 535.2ms | ActiveRecord: 0.0ms | Allocations: 135467)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:00:40 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 1.9ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 18:00:45 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.0ms | Allocations: 8102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 498ms (Views: 495.9ms | ActiveRecord: 0.0ms | Allocations: 135056)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:00:47 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.4ms | Allocations: 2059)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users" for ::1 at 2020-02-03 18:01:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:01:49 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/" for ::1 at 2020-02-03 18:01:50 +0530
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 18:01:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 8105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 13856)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:01:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.9ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 18:03:22 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 21.8ms | Allocations: 5714)
+  Rendered posts/show.html.erb within layouts/application (Duration: 35.9ms | Allocations: 7809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 44.6ms | ActiveRecord: 6.3ms | Allocations: 16216)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 18:03:22 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 15.2ms | Allocations: 5492)
+  Rendered posts/show.html.erb within layouts/application (Duration: 21.5ms | Allocations: 7142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 26.2ms | ActiveRecord: 2.9ms | Allocations: 14765)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 18:03:23 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 6.8ms | Allocations: 1137)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2850)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:03:24 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2687)
+
+
+Started GET "/posts/1/edit" for ::1 at 2020-02-03 18:03:31 +0530
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 30.9ms | Allocations: 5737)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 35.1ms | Allocations: 6043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 54.1ms | ActiveRecord: 2.9ms | Allocations: 13803)
+
+
+Started PATCH "/posts/1" for ::1 at 2020-02-03 18:03:34 +0530
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"RxQ8zJBcjCjXEB/YUyO3ohLmRPvdNiiRoPABou2Gtly1imsyp+QAR7a5l8ge56kXHURAIGGSsJJhTo1WDDZyzQ==", "post"=>{"title"=>"New post ", "content"=>"rddg"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+  [1m[36mPost Update (0.8ms)[0m  [1m[33mUPDATE "posts" SET "content" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["content", "rddg"], ["updated_at", "2020-02-03 12:33:34.455189"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:29:in `update'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 43ms (ActiveRecord: 4.6ms | Allocations: 4995)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 18:03:34 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 3)
+  Rendered comments/_form.html.erb (Duration: 17.6ms | Allocations: 5493)
+  Rendered posts/show.html.erb within layouts/application (Duration: 24.1ms | Allocations: 7142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 48.8ms | ActiveRecord: 1.9ms | Allocations: 14760)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 18:03:35 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 10.4ms | Allocations: 970)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 1348)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:03:36 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.0ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started POST "/posts/1/comments" for ::1 at 2020-02-03 18:03:44 +0530
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"GlHz6LU8G4GgUPPB3VF9BTMp9EtrFeyygQSTLonQQOrIs2vvg3YPnvATRi8d0d+XlinrsAokggOiicr0vtRuYA==", "comment"=>{"name"=>"Vedant Shetty", "comment"=>"rfrsf"}, "commit"=>"Create Comment", "post_id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("name", "comment", "created_at", "updated_at", "post_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Vedant Shetty"], ["comment", "rfrsf"], ["created_at", "2020-02-03 12:33:44.829084"], ["updated_at", "2020-02-03 12:33:44.829084"], ["post_id", 1]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 18ms (ActiveRecord: 2.6ms | Allocations: 3795)
+
+
+Started GET "/posts/1" for ::1 at 2020-02-03 18:03:44 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `find_post'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:28
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/posts/show.html.erb:30
+  Rendered collection of comments/_comment.html.erb [1 times] (Duration: 0.7ms | Allocations: 300)
+  Rendered comments/_form.html.erb (Duration: 13.0ms | Allocations: 5507)
+  Rendered posts/show.html.erb within layouts/application (Duration: 19.2ms | Allocations: 7680)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 28.0ms | ActiveRecord: 1.7ms | Allocations: 15302)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-03 18:03:45 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.2ms | Allocations: 969)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1347)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:03:46 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.0ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/" for ::1 at 2020-02-03 18:04:14 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 1066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 51.0ms | ActiveRecord: 4.0ms | Allocations: 8407)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 18:54:47 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 81.0ms | Allocations: 8107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 124ms (Views: 120.4ms | ActiveRecord: 0.0ms | Allocations: 13855)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:54:49 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.9ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 18:54:52 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 73.7ms | Allocations: 6406)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 118.6ms | ActiveRecord: 0.0ms | Allocations: 12744)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 18:54:53 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 79.1ms | Allocations: 6138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 112.4ms | ActiveRecord: 0.0ms | Allocations: 11807)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:54:54 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.0ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 2524)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:54:55 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.2ms | Allocations: 2059)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 18:56:16 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 98.8ms | Allocations: 6964)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 190.3ms | ActiveRecord: 0.0ms | Allocations: 14268)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 18:56:19 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.3ms | Allocations: 2295)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 4248)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:52:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1221)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 3087)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+                  input_html: { autocomplete: "email" } );...
+                            ^:
+  app/views/devise/sessions/new.html.erb:10:in `'
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:52:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1207)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1840)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting ')'
+                  input_html: { autocomplete: "email" } );...
+                            ^:
+  app/views/devise/sessions/new.html.erb:10:in `'
+
+Started POST "/__better_errors/7a8c85cee4030181/variables" for ::1 at 2020-02-03 21:52:51 +0530
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:52:53 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.7ms | Allocations: 2295)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 4251)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:52:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.4ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 93.6ms | Allocations: 8829)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 129.8ms | ActiveRecord: 0.0ms | Allocations: 16209)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:53:01 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.7ms | Allocations: 2288)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 4229)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:53:28 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 91.7ms | Allocations: 8599)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 146ms (Views: 136.6ms | ActiveRecord: 0.0ms | Allocations: 15963)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:53:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.7ms | Allocations: 2288)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 4233)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:54:19 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 78.0ms | Allocations: 8309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 126.3ms | ActiveRecord: 0.0ms | Allocations: 15683)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:54:21 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.5ms | Allocations: 2288)
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 4225)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:55:37 +0530
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.6ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 835ms (Views: 833.9ms | ActiveRecord: 0.0ms | Allocations: 133997)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:55:53 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 94.8ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 819ms (Views: 810.6ms | ActiveRecord: 0.0ms | Allocations: 135340)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:55:56 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.6ms | Allocations: 2059)
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 21:56:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 551)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 162.2ms | Allocations: 8329)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 201.5ms | ActiveRecord: 0.0ms | Allocations: 15710)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:56:38 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.1ms | Allocations: 2292)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 4244)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 21:56:39 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 82.7ms | Allocations: 6412)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 133.0ms | ActiveRecord: 0.0ms | Allocations: 12754)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:56:42 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.4ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 21:58:03 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 89.7ms | Allocations: 6193)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 138.7ms | ActiveRecord: 0.0ms | Allocations: 13489)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:58:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.8ms | Allocations: 2288)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 4230)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 21:58:56 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 58.8ms | Allocations: 5373)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 781ms (Views: 777.4ms | ActiveRecord: 0.0ms | Allocations: 133203)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:58:59 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.2ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 21:59:12 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 66.3ms | Allocations: 5372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 769ms (Views: 764.7ms | ActiveRecord: 0.0ms | Allocations: 132679)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:59:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 50.3ms | Allocations: 2059)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 21:59:47 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 68.2ms | Allocations: 5371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 801ms (Views: 797.9ms | ActiveRecord: 0.0ms | Allocations: 132715)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 21:59:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.1ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:02:56 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 82.9ms | Allocations: 5372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 758ms (Views: 751.7ms | ActiveRecord: 0.0ms | Allocations: 131793)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:02:57 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 5371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms | Allocations: 11041)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:02:59 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.8ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:03:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 66.8ms | Allocations: 5364)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 810ms (Views: 805.2ms | ActiveRecord: 0.0ms | Allocations: 132670)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:03:29 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.6ms | Allocations: 2059)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:03:47 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 6.0ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 77.4ms | Allocations: 6203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 126.7ms | ActiveRecord: 0.0ms | Allocations: 13505)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:03:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.0ms | Allocations: 2295)
+Completed 200 OK in 87ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 4258)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:03:59 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 68.5ms | Allocations: 6203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 127.5ms | ActiveRecord: 0.0ms | Allocations: 13507)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:04:01 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.6ms | Allocations: 2288)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 4230)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:06:04 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 94.9ms | Allocations: 5373)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 809ms (Views: 802.9ms | ActiveRecord: 0.0ms | Allocations: 132703)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:06:07 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.4ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:07:15 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 61.2ms | Allocations: 5371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 790ms (Views: 786.9ms | ActiveRecord: 0.0ms | Allocations: 132709)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:07:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.1ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:08:27 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.2ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 85.6ms | Allocations: 6205)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 139.8ms | ActiveRecord: 0.0ms | Allocations: 13512)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:08:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.6ms | Allocations: 2292)
+Completed 200 OK in 37ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 4246)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:08:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.3ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 80.7ms | Allocations: 8331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 134ms (Views: 127.2ms | ActiveRecord: 0.0ms | Allocations: 15717)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:09:01 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.1ms | Allocations: 2292)
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 4247)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:11:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 89.7ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 772ms (Views: 766.2ms | ActiveRecord: 0.0ms | Allocations: 134941)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:11:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.8ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:11:28 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 89.7ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 877ms (Views: 871.7ms | ActiveRecord: 0.0ms | Allocations: 134894)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:11:31 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.2ms | Allocations: 2059)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 2527)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:11:45 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 83.4ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 807ms (Views: 802.1ms | ActiveRecord: 0.0ms | Allocations: 135377)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:11:49 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.6ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:14:33 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.9ms | Allocations: 546)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 88.5ms | Allocations: 8322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 144ms (Views: 139.6ms | ActiveRecord: 0.0ms | Allocations: 15704)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:14:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.1ms | Allocations: 2292)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 4247)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:14:49 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 81.1ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 832ms (Views: 822.0ms | ActiveRecord: 0.0ms | Allocations: 134905)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:14:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.3ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:15:03 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 82.3ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 789ms (Views: 783.7ms | ActiveRecord: 0.0ms | Allocations: 134452)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:15:06 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.9ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:15:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 84.9ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 777ms (Views: 772.4ms | ActiveRecord: 0.0ms | Allocations: 134965)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:15:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.5ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:16:02 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 126.6ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 810ms (Views: 803.1ms | ActiveRecord: 0.0ms | Allocations: 135766)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:16:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.7ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:17:05 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 80.0ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 792ms (Views: 786.4ms | ActiveRecord: 0.0ms | Allocations: 134487)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:17:08 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.8ms | Allocations: 2059)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:17:59 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 83.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 808ms (Views: 802.9ms | ActiveRecord: 0.0ms | Allocations: 134498)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:18:02 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.8ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 2523)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:18:16 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 76.8ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 852ms (Views: 845.6ms | ActiveRecord: 0.0ms | Allocations: 134932)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:18:19 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.0ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:18:27 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 66.6ms | Allocations: 7517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 825ms (Views: 821.1ms | ActiveRecord: 0.0ms | Allocations: 135796)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:18:30 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.1ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:18:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 85.2ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 807ms (Views: 803.3ms | ActiveRecord: 0.0ms | Allocations: 134448)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:18:39 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:18:54 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 120.7ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 886ms (Views: 881.2ms | ActiveRecord: 0.0ms | Allocations: 136284)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:18:57 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.0ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:20:33 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.4ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 709ms (Views: 707.2ms | ActiveRecord: 0.0ms | Allocations: 135416)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:20:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.8ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:20:53 +0530
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.6ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 13251)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:21:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 99.2ms | Allocations: 7509)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 830ms (Views: 823.2ms | ActiveRecord: 0.0ms | Allocations: 134484)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:21:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.9ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:22:24 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 90.6ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 791ms (Views: 781.3ms | ActiveRecord: 0.0ms | Allocations: 135406)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:22:27 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.6ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:23:01 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 87.5ms | Allocations: 7518)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 816ms (Views: 807.0ms | ActiveRecord: 0.0ms | Allocations: 135320)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:23:04 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.7ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 2513)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:23:10 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 89.1ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 784ms (Views: 777.8ms | ActiveRecord: 0.0ms | Allocations: 134926)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:23:13 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 19.8ms | Allocations: 2059)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:23:22 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 95.2ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 810ms (Views: 801.8ms | ActiveRecord: 0.0ms | Allocations: 136699)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:23:26 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.1ms | Allocations: 2059)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:23:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 83.3ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 861ms (Views: 854.7ms | ActiveRecord: 0.0ms | Allocations: 134937)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:23:46 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.6ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:24:00 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 72.6ms | Allocations: 5656)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 115.9ms | ActiveRecord: 0.0ms | Allocations: 11995)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:24:02 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.9ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:24:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 90.9ms | Allocations: 7519)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 132.1ms | ActiveRecord: 0.0ms | Allocations: 13265)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:24:11 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:25:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 86.1ms | Allocations: 7507)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 842ms (Views: 836.1ms | ActiveRecord: 0.0ms | Allocations: 135431)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:25:46 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.1ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:27:43 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 150.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 208ms (Views: 199.0ms | ActiveRecord: 0.0ms | Allocations: 13250)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:27:46 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.5ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:27:51 +0530
+Processing by Devise::SessionsController#new as */*
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 65.3ms | Allocations: 7513)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms | Allocations: 13263)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:28:10 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 95.2ms | Allocations: 7506)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 851ms (Views: 845.1ms | ActiveRecord: 0.0ms | Allocations: 134864)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:28:13 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.6ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 2513)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:29:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 113.2ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 869ms (Views: 864.0ms | ActiveRecord: 0.0ms | Allocations: 134901)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:29:13 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 15.4ms | Allocations: 2059)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:29:47 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 96.9ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 938ms (Views: 934.5ms | ActiveRecord: 0.0ms | Allocations: 134460)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:29:50 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.9ms | Allocations: 2059)
+Completed 200 OK in 29ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:31:19 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 115.4ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 867ms (Views: 859.2ms | ActiveRecord: 0.0ms | Allocations: 135329)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:31:22 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.0ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:31:32 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 85.5ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 882ms (Views: 875.7ms | ActiveRecord: 0.0ms | Allocations: 135413)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:31:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.0ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:33:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 67.5ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 817ms (Views: 814.2ms | ActiveRecord: 0.0ms | Allocations: 135431)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:33:18 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.0ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:33:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 110.9ms | Allocations: 7516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 753ms (Views: 748.7ms | ActiveRecord: 0.0ms | Allocations: 134983)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:33:53 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.7ms | Allocations: 2059)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:34:06 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 84.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 868ms (Views: 860.5ms | ActiveRecord: 0.0ms | Allocations: 135337)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:34:09 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 13.2ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:34:42 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 92.3ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 883ms (Views: 878.5ms | ActiveRecord: 0.0ms | Allocations: 134017)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:34:45 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 18.7ms | Allocations: 2059)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:35:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 129.6ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 930ms (Views: 924.2ms | ActiveRecord: 0.0ms | Allocations: 135885)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:35:16 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.8ms | Allocations: 2059)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:35:28 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 75.1ms | Allocations: 7515)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 826ms (Views: 820.6ms | ActiveRecord: 0.0ms | Allocations: 135761)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:35:31 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.4ms | Allocations: 2059)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:35:37 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 82.0ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 131ms (Views: 125.9ms | ActiveRecord: 0.0ms | Allocations: 13759)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:35:39 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 8.4ms | Allocations: 2059)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:36:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 99.1ms | Allocations: 7506)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 797ms (Views: 791.1ms | ActiveRecord: 0.0ms | Allocations: 134950)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:36:16 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.5ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:37:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 76.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 823ms (Views: 818.0ms | ActiveRecord: 0.0ms | Allocations: 134510)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:37:43 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 24.9ms | Allocations: 2059)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:38:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 83.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 839ms (Views: 834.5ms | ActiveRecord: 0.0ms | Allocations: 135413)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:38:12 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 14.0ms | Allocations: 2059)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:38:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 86.5ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 820ms (Views: 815.3ms | ActiveRecord: 0.0ms | Allocations: 136379)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:38:43 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 9.7ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:39:31 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 84.5ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 851ms (Views: 846.0ms | ActiveRecord: 0.0ms | Allocations: 134968)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:39:35 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.2ms | Allocations: 2059)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:41:14 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 81.5ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1016ms (Views: 1012.0ms | ActiveRecord: 0.0ms | Allocations: 135873)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:41:17 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.5ms | Allocations: 2059)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:41:49 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 76.2ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 796ms (Views: 791.2ms | ActiveRecord: 0.0ms | Allocations: 134493)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:41:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.1ms | Allocations: 2059)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 2517)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:42:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 34.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 756ms (Views: 749.8ms | ActiveRecord: 0.0ms | Allocations: 135006)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:42:15 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 19.5ms | Allocations: 2059)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 2520)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:42:25 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 51.1ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 785ms (Views: 781.4ms | ActiveRecord: 0.0ms | Allocations: 135005)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:42:28 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 12.8ms | Allocations: 2059)
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:42:39 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 101.5ms | Allocations: 7517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 792ms (Views: 785.8ms | ActiveRecord: 0.0ms | Allocations: 134976)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:42:42 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 11.2ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-03 22:42:49 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.9ms | Allocations: 7514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 762ms (Views: 759.4ms | ActiveRecord: 0.0ms | Allocations: 135884)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-03 22:42:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 16.0ms | Allocations: 2059)
+Completed 200 OK in 25ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 2522)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-03 22:43:23 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 67.1ms | Allocations: 5371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.0ms | Allocations: 11048)
+
+

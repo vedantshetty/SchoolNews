@@ -21,6 +21,26 @@
     <% if alert %>
       <p class ='alert alert-danger has-text-centered'><%= alert %></p>
     <% end %>
+
+    <section class="hero is-navy is-small">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+            <% if user_signed_in? %>
+              <div class="navbar-end">
+                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+              </div>
+            <% end %>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
     <%= yield %>
   </body>
 </html>

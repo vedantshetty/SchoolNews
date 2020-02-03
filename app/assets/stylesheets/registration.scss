@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+}
+
+.devise {
+    padding-top: 240px;
+    background-image: image-url('login-background.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.devise * {
+  color: white;
+}
+
+
+.devise .input {
+   border-width: 0;
+   background-color: rgba($color: blue, $alpha: 0.2);
+
+}
+
+.devise input {
+  border-width: 0px;
+  color: white;
+  width: 360px;
+  background-color: rgba($color: blue, $alpha: 0);
+}
+
+.devise input:focus {
+  outline: none !important;
+  border-bottom:1px solid red;
+}
+
+#user_remember_me {
+  width: fit-content;
+}
+.devise .button {
+  background-color: rgba($color: blue, $alpha: 0.4);
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.devise .simple_form {
+  text-align: center;
+  margin: 0 auto;
+  width: 360px;
+}
+
+.devise ::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+.devise :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.devise ::placeholder {
+  color: white;
+}
