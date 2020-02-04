@@ -10424,3 +10424,409 @@ Processing by ServiceWorkerController#service_worker as */*
 Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2517)
 
 
+Started GET "/" for ::1 at 2020-02-04 10:44:45 +0530
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 4305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 142ms (Views: 105.5ms | ActiveRecord: 13.0ms | Allocations: 41272)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 10:44:46 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.8ms | Allocations: 1149)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3073)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:44:48 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.4ms | Allocations: 2305)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 4278)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:45:00 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 7918)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:45:43 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 4305)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c3182d16fba8fa2434a7
+Version: webpack 4.41.5
+Time: 906ms
+Built at: 04/02/2020 10:45:46 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0f09c5020a6c57bd81ad.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0f09c5020a6c57bd81ad.js.map    139 KiB  application  [emitted] [dev]        application
+          js/index-384fdffaaccfc262c97e.js   4.39 KiB        index  [emitted] [immutable]  index
+      js/index-384fdffaaccfc262c97e.js.map   4.21 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-0f09c5020a6c57bd81ad.js js/application-0f09c5020a6c57bd81ad.js.map
+Entrypoint index = js/index-384fdffaaccfc262c97e.js js/index-384fdffaaccfc262c97e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 971 bytes {application} [built]
+[./app/javascript/packs/index.js] 539 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'ndex' in '/home/vedant/Programming/News/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-15
+
+Completed 200 OK in 2470ms (Views: 2445.8ms | ActiveRecord: 7.4ms | Allocations: 28393)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 10:45:46 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 4.0ms | Allocations: 1179)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3103)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:45:48 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.4ms | Allocations: 2303)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4269)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:45:48 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.5ms | Allocations: 2060)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2694)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:45:51 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.7ms | Allocations: 7902)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:46:02 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 726)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: a642c40c344ea7b59415
+Version: webpack 4.41.5
+Time: 668ms
+Built at: 04/02/2020 10:46:03 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d33d4276f4d881fba50a.js    124 KiB  application  [emitted] [immutable]  application
+js/application-d33d4276f4d881fba50a.js.map    139 KiB  application  [emitted] [dev]        application
+          js/index-384fdffaaccfc262c97e.js   4.39 KiB        index  [emitted] [immutable]  index
+      js/index-384fdffaaccfc262c97e.js.map   4.21 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-d33d4276f4d881fba50a.js js/application-d33d4276f4d881fba50a.js.map
+Entrypoint index = js/index-384fdffaaccfc262c97e.js js/index-384fdffaaccfc262c97e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 972 bytes {application} [built]
+[./app/javascript/packs/index.js] 539 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'index' in '/home/vedant/Programming/News/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-16
+
+Completed 200 OK in 1786ms (Views: 1782.6ms | ActiveRecord: 0.6ms | Allocations: 8887)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 10:46:04 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.2ms | Allocations: 1558)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1935)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:46:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 1.8ms | Allocations: 2059)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2687)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:46:05 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 3.6ms | Allocations: 2474)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3120)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:47:48 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 725)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/vedant/Programming/News/public/packs
+[Webpacker] Hash: 20ac751bda6fad54c6e5
+Version: webpack 4.41.5
+Time: 651ms
+Built at: 04/02/2020 10:47:49 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-88339d78c83a203410b0.js    125 KiB  application  [emitted] [immutable]  application
+js/application-88339d78c83a203410b0.js.map    140 KiB  application  [emitted] [dev]        application
+          js/index-80e4da27868dc8922efd.js   4.42 KiB        index  [emitted] [immutable]  index
+      js/index-80e4da27868dc8922efd.js.map   4.25 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-88339d78c83a203410b0.js js/application-88339d78c83a203410b0.js.map
+Entrypoint index = js/index-80e4da27868dc8922efd.js js/index-80e4da27868dc8922efd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 978 bytes {application} [built]
+[./app/javascript/packs/index.js] 573 bytes {index} {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1849ms (Views: 1835.0ms | ActiveRecord: 2.0ms | Allocations: 8956)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 10:47:50 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.7ms | Allocations: 965)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:47:51 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 17.9ms | Allocations: 2059)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 2688)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:47:52 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 5.4ms | Allocations: 2059)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2687)
+
+
+Started GET "/" for ::1 at 2020-02-04 10:51:17 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 725)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/vedant/Programming/News/public/packs
+[Webpacker] Hash: 4867f5c766a03433e6f5
+Version: webpack 4.41.5
+Time: 702ms
+Built at: 04/02/2020 10:51:19 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5822019f1c5b5985a7ea.js    125 KiB  application  [emitted] [immutable]  application
+js/application-5822019f1c5b5985a7ea.js.map    140 KiB  application  [emitted] [dev]        application
+          js/index-125aed9863181c008468.js   4.41 KiB        index  [emitted] [immutable]  index
+      js/index-125aed9863181c008468.js.map   4.24 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-5822019f1c5b5985a7ea.js js/application-5822019f1c5b5985a7ea.js.map
+Entrypoint index = js/index-125aed9863181c008468.js js/index-125aed9863181c008468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 978 bytes {application} [built]
+[./app/javascript/packs/index.js] 559 bytes {index} {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1918ms (Views: 1876.1ms | ActiveRecord: 3.8ms | Allocations: 8956)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 10:51:20 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.1ms | Allocations: 966)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1344)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:51:21 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 10.1ms | Allocations: 2059)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 10:51:22 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 2.8ms | Allocations: 2094)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3058)
+
+
+Started GET "/" for ::1 at 2020-02-04 11:00:09 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1066)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/vedant/Programming/News/public/packs
+[Webpacker] Hash: ed2ac93b26c437234376
+Version: webpack 4.41.5
+Time: 667ms
+Built at: 04/02/2020 11:00:11 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-06a2920d93c9033e8ccb.js    125 KiB  application  [emitted] [immutable]  application
+js/application-06a2920d93c9033e8ccb.js.map    141 KiB  application  [emitted] [dev]        application
+          js/index-125aed9863181c008468.js   4.41 KiB        index  [emitted] [immutable]  index
+      js/index-125aed9863181c008468.js.map   4.24 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-06a2920d93c9033e8ccb.js js/application-06a2920d93c9033e8ccb.js.map
+Entrypoint index = js/index-125aed9863181c008468.js js/index-125aed9863181c008468.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.48 KiB {application} [built]
+[./app/javascript/packs/index.js] 559 bytes {index} {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1864ms (Views: 1837.2ms | ActiveRecord: 6.1ms | Allocations: 10653)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 11:00:12 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 5.0ms | Allocations: 1137)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3012)
+
+
+Started GET "/service-worker.js" for ::1 at 2020-02-04 11:00:13 +0530
+Processing by ServiceWorkerController#service_worker as */*
+  Rendering service_worker/service_worker.js.erb
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered service_worker/service_worker.js.erb (Duration: 25.8ms | Allocations: 2294)
+Completed 200 OK in 46ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 4263)
+
+
+Started GET "/" for ::1 at 2020-02-04 11:00:37 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 4305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 54.6ms | ActiveRecord: 9.1ms | Allocations: 27229)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 11:00:38 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 1.7ms | Allocations: 1179)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3103)
+
+
+Started GET "/" for ::1 at 2020-02-04 11:02:20 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 735)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/vedant/Programming/News/public/packs
+[Webpacker] Hash: 6133cfc04ce815751497
+Version: webpack 4.41.5
+Time: 672ms
+Built at: 04/02/2020 11:02:22 am
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-821f9ae70598ac664b7b.js    125 KiB  application  [emitted] [immutable]  application
+js/application-821f9ae70598ac664b7b.js.map    140 KiB  application  [emitted] [dev]        application
+          js/index-35dccfba1b41800a9bf0.js   4.42 KiB        index  [emitted] [immutable]  index
+      js/index-35dccfba1b41800a9bf0.js.map   4.25 KiB        index  [emitted] [dev]        index
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-821f9ae70598ac664b7b.js js/application-821f9ae70598ac664b7b.js.map
+Entrypoint index = js/index-35dccfba1b41800a9bf0.js js/index-35dccfba1b41800a9bf0.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 978 bytes {application} [built]
+[./app/javascript/packs/index.js] 570 bytes {index} {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1847ms (Views: 1834.4ms | ActiveRecord: 2.0ms | Allocations: 9001)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 11:02:23 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 3.5ms | Allocations: 1581)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1968)
+
+
+Started GET "/" for ::1 at 2020-02-04 11:03:45 +0530
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 1.2ms | Allocations: 7880)
+
+
+Started GET "/" for ::1 at 2020-02-04 11:04:01 +0530
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/posts/index.html.erb:38
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 55.7ms | ActiveRecord: 3.3ms | Allocations: 9338)
+
+
+Started GET "/manifest.json" for ::1 at 2020-02-04 11:04:01 +0530
+Processing by ServiceWorkerController#manifest as */*
+  Rendering service_worker/manifest.json.erb
+  Rendered service_worker/manifest.json.erb (Duration: 2.3ms | Allocations: 1135)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3010)
+
+
