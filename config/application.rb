@@ -12,6 +12,7 @@ module Blog
     config.load_defaults 6.0
     config.assets.enabled = true
     config_serve_static_assets = true
+    config.time_zone = 'Mumbai'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
