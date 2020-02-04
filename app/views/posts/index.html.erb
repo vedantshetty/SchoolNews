@@ -1,84 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atlas: School News</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<section class='tabs is-centered is-medium is-navy'>
-  <ul>
-    <li class="tab is-active" onclick="openTab(event,'news')">
-      <a>
-        <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
-        <span>News</span>
-      </a>
-    </li>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type:'image/jpeg' %>
+    <link rel="manifest" href="/manifest.json">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#01347A"/>
+  </head>
 
-    <li class="tab" onclick="openTab(event,'innovation')">
-      <a>
-        <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
-        <span>Innovation</span>
-      </a>
-    </li>
+  <body>
+    <% if notice %>
+      <p class='alert alert-success has-text-centered'><%= notice %></p>
+    <% end %>
 
-    <li class="tab" onclick="openTab(event,'training')">
-      <a>
-        <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
-        <span>Training</span>
-      </a>
-    </li>
+    <% if alert %>
+      <p class ='alert alert-danger has-text-centered'><%= alert %></p>
+    <% end %>
 
-    <li class="tab" onclick="openTab(event,'accolades')">
-      <a>
-        <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-        <span>Accolades</span>
-      </a>
-    </li>
-  </ul>
-</section>
+    <section class="hero is-navy is-small">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
+            </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+            <% if user_signed_in? %>
+              <div class="navbar-end">
+                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+              </div>
+            <% end %>
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
+
+      <section class='tabs is-centered is-medium is-navy'>
+        <ul>
+          <li class="tab is-active" onclick="openTab(event,'news')">
+            <a>
+              <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+              <span>News</span>
+            </a>
+          </li>
+
+          <li class="tab" onclick="openTab(event,'innovation')">
+            <a>
+              <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+              <span>Innovation</span>
+            </a>
+          </li>
+
+          <li class="tab" onclick="openTab(event,'training')">
+            <a>
+              <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
+              <span>Training</span>
+            </a>
+          </li>
+
+          <li class="tab" onclick="openTab(event,'accolades')">
+            <a>
+              <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+              <span>Accolades</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
 
 <!-- Data is kept here -->
-  <section class ='section'>
-    <div class='container tab-content' id='news'>
-      <% @posts.each do |post| %>
-        <div class = 'card'>
-          <div class='card-content'>
-            <div class ='media'>
-            
-              <div class="media-left">
-                <figure class="image is-64x64">
-                  <%= image_tag("https://via.placeholder.com/128.png", :alt=>"Placeholder image") %>
-                </figure>
-              </div>
+      <section class ='section'>
+        <div class='container tab-content' id='news'>
+          <% @posts.each do |post| %>
+            <div class = 'card'>
+              <div class='card-content'>
+                <div class ='media'>
+                
+                  <div class="media-left">
+                    <figure class="image is-64x64">
+                      <%= image_tag("https://via.placeholder.com/128.png", :alt=>"Placeholder image") %>
+                    </figure>
+                  </div>
 
-              <div class='media-right'>
-                <div class= 'media-content'>
-                  <p class= 'title is-4'><%= link_to post.title, post %></p>
-                </div>
-                <div class= 'data'>
-                  <%=dateFormater(post.created_at) %>
-                </div>
-                <div class ='comment-count'>
-                  Published by: <span class ='tag is-rounded'>Comments</span>
+                  <div class='media-right'>
+                    <div class= 'media-content'>
+                      <p class= 'title is-4'><%= link_to post.title, post %></p>
+                    </div>
+                    <div class= 'data'>
+                      <%=dateFormater(post.created_at) %>
+                    </div>
+                    <div class ='comment-count'>
+                      Published by: <span class ='tag is-rounded'>Comments</span>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-
             </div>
-          </div>
+          <% end %>
         </div>
-      <% end %>
-    </div>
 
-    <div class='container tab-content' id='innovation' style="display:none">
-      <p>This is the innovations tab</p>
-    </div>
+        <div class='container tab-content' id='innovation' style="display:none">
+          <p>This is the innovations tab</p>
+        </div>
 
-    <div class='container tab-content' id='training' style="display:none">
-      <p>This is the training tab</p>
-    </div>
+        <div class='container tab-content' id='training' style="display:none">
+          <p>This is the training tab</p>
+        </div>
 
-    <div class='container tab-content' id='accolades' style="display:none">
-      <p>This is the accolades tab</p>
-    </div>
-  </section>
+        <div class='container tab-content' id='accolades' style="display:none">
+          <p>This is the accolades tab</p>
+        </div>
+      </section>
 
-<section class='section'>
-  <button class="fab button is-hidden-desktop is-danger">
-    <%= link_to fa_icon('plus'), new_post_path, class:'has-text-white' %>
-  </button>
-</section>
+    <section class='section'>
+      <button class="fab button is-hidden-desktop is-danger">
+        <%= link_to fa_icon('plus'), new_post_path, class:'has-text-white' %>
+      </button>
+    </section>
+  </body>
+</html>

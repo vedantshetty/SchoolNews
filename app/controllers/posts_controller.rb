@@ -3,6 +3,7 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
 before_action :authenticate_user!
   def index
     @posts = Post.where("created_at>=?",30.days.ago).order('created_at DESC')
+    render :layout => false
   end
 
   def new
