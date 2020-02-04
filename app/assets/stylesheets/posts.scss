@@ -28,3 +28,16 @@
   border-bottom-width: 4px;
 }
 
+@media only screen and (max-width: 1024px){
+  .fa-filter {
+    position: fixed;
+    right: 10px;
+    margin: 15px;
+    top: 8px;
+  }
+}
+
+.fa-filter {
+  margin-left: 20px;
+}
+

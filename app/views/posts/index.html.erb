@@ -23,57 +23,62 @@
       <p class ='alert alert-danger has-text-centered'><%= alert %></p>
     <% end %>
 
+<!-- topmost header -->
     <section class="hero is-navy is-small">
-      <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
               <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
             </div>
+
             <div id="navbarMenuHeroA" class="navbar-menu">
-            <% if user_signed_in? %>
-              <div class="navbar-end">
-                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-              </div>
-            <% end %>
+              <% if user_signed_in? %>
+                <div class="navbar-end">
+                  <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
+                </div>
+              <% end %>
+            </div>
+            <div class='navbar-item'>
+              <%= link_to fa_icon('filter'), "https://www.google.com", class:'fa-lg' %>
             </div>
           </div>
         </nav>
       </div>
-      </section>
+    </section>
 
-      <section class='tabs is-centered is-medium is-navy'>
-        <ul>
-          <li class="tab is-active" onclick="openTab(event,'news')">
-            <a>
-              <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
-              <span>News</span>
-            </a>
-          </li>
+<!-- tabs secrion -->
+    <section class='tabs is-centered is-medium is-navy'>
+      <ul>
+        <li class="tab is-active" onclick="openTab(event,'news')">
+          <a>
+            <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+            <span>News</span>
+          </a>
+        </li>
 
-          <li class="tab" onclick="openTab(event,'innovation')">
-            <a>
-              <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
-              <span>Innovation</span>
-            </a>
-          </li>
+        <li class="tab" onclick="openTab(event,'innovation')">
+          <a>
+            <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+            <span>Innovation</span>
+          </a>
+        </li>
 
-          <li class="tab" onclick="openTab(event,'training')">
-            <a>
-              <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
-              <span>Training</span>
-            </a>
-          </li>
+        <li class="tab" onclick="openTab(event,'training')">
+          <a>
+            <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
+            <span>Training</span>
+          </a>
+        </li>
 
-          <li class="tab" onclick="openTab(event,'accolades')">
-            <a>
-              <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-              <span>Accolades</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+        <li class="tab" onclick="openTab(event,'accolades')">
+          <a>
+            <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+            <span>Accolades</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
 
 <!-- Data is kept here -->
