@@ -1,5 +1,3 @@
-console.log(this)
-
 window.openTab = function(evt, tabName) {
   var i, content, tablinks;
   content = document.getElementsByClassName("tab-content");

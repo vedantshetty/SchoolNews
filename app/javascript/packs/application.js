@@ -24,3 +24,6 @@ if (navigator.serviceWorker) {
       console.log(reg);
     });
 }
+
+require("trix")
+require("@rails/actiontext")
