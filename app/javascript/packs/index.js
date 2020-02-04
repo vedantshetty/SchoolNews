@@ -15,3 +15,15 @@ window.openTab = function(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " is-active";
 }
+
+window.openModal = function() {
+
+  modal = this.document.getElementById('timepicker');
+  modal.className += ' is-active';
+}
+
+
+window.closeModal = function() {
+  modal = this.document.getElementById('timepicker');
+  modal.className = modal.className.replace(' is-active',"");
+}
