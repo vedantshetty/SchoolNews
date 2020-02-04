@@ -39,18 +39,25 @@
         <div class = 'card'>
           <div class='card-content'>
             <div class ='media'>
-              <div class= 'media-content'>
-                <p class= 'title is-4'><%= link_to post.title, post %></p>
+            
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <%= image_tag("https://via.placeholder.com/128.png", :alt=>"Placeholder image") %>
+                </figure>
               </div>
-            </div>
-            <div class= 'data'>
-              <%=dateFormater(post.created_at) %>
-            </div>
-            <div class ='comment-count'>
-              Published by
-              <span class ='tag is-rounded'>
-                Comments
-              </span>
+
+              <div class='media-right'>
+                <div class= 'media-content'>
+                  <p class= 'title is-4'><%= link_to post.title, post %></p>
+                </div>
+                <div class= 'data'>
+                  <%=dateFormater(post.created_at) %>
+                </div>
+                <div class ='comment-count'>
+                  Published by: <span class ='tag is-rounded'>Comments</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
