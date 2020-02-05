@@ -29,6 +29,7 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
+              <%= fa_icon 'chevron-left lg', class:'navbar-item', onclick: "history.back()" %>
               <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
