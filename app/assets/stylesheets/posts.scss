@@ -30,10 +30,15 @@
 
 @media only screen and (max-width: 1024px){
   .fa-filter {
-    position: fixed;
+    position: absolute;
     right: 10px;
     margin: 15px;
     top: 8px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-chevron-left {
+    display: none;
   }
 }
 
