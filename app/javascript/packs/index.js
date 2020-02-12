@@ -27,3 +27,5 @@ window.closeModal = function() {
   modal = this.document.getElementById('timepicker');
   modal.className = modal.className.replace(' is-active',"");
 }
+
+$('.dropdown-trigger').dropdown();

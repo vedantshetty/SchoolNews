@@ -24,61 +24,38 @@
     <% end %>
 
 <!-- topmost header -->
-    <section class="hero is-navy is-small">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
-            </div>
-
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <% if user_signed_in? %>
-                <div class="navbar-end">
-                  <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-                </div>
-              <% end %>
-            </div>
-            <div class='navbar-item'>
-              <%= fa_icon 'filter lg', onclick: "openModal()" %>
-            </div>
-          </div>
-        </nav>
+  <div class='navbar-fixed'>
+    <nav class ='nav-extended indigo darken-4'>
+      <div class='nav-wrapper'>
+        <a href='#' class='brand-logo'>Atlas</a>
+        <ul id='nav-mobile' class='right'>
+          <li class='category-select'><a href='#' data-target="category">Drop</a></li>
+          <li><a href=''>Create a new post</a></li>
       </div>
-    </section>
+    </nav>
+  </div>
+
+
+<ul id ='category' class='dropdown-content'>
+  <li><a href='#!'>One</a></li>
+  <li><a href='#!'>Two</a></li>
+  <li><a href='#!'>Three</a></li>
+  <li><a href='#!'>Four</a></li>
+</ul>
+
+ <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
 
 <!-- tabs secrion -->
-    <section class='tabs is-centered is-medium is-navy'>
-      <ul>
-        <li class="tab is-active" onclick="openTab(event,'news')">
-          <a>
-            <span class="icon is-small"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
-            <span>News</span>
-          </a>
-        </li>
-
-        <li class="tab" onclick="openTab(event,'innovation')">
-          <a>
-            <span class="icon is-small"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
-            <span>Innovation</span>
-          </a>
-        </li>
-
-        <li class="tab" onclick="openTab(event,'training')">
-          <a>
-            <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
-            <span>Training</span>
-          </a>
-        </li>
-
-        <li class="tab" onclick="openTab(event,'accolades')">
-          <a>
-            <span class="icon is-small"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-            <span>Accolades</span>
-          </a>
-        </li>
-      </ul>
-    </section>
 
 <!-- Modals are here -->
     <div class="modal is-clipped" id="timepicker">
