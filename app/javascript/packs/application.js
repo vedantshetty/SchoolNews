@@ -36,14 +36,12 @@ if (navigator.serviceWorker) {
 
 $(document).on('turbolinks:load', function(){
   $('.dropdown-trigger').dropdown({
-    'coverTrigger': false
+    'coverTrigger': false,
+    'constrainWidth': false
   });
-
-  $(document).ready(function(){
     $('select').formSelect();
-  });
   
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+    $('.sidenav').sidenav({
+      'edge': 'right'
+    });
 })

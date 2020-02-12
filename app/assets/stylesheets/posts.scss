@@ -36,3 +36,26 @@ nav .brand-logo {
     transform: translateX(0);
   }
 }
+
+
+
+// Side bar styles
+
+.sidenav li > a > i,
+ .sidenav li > a > [class^="mdi-"],
+  .sidenav li > a li > a > [class*="mdi-"],
+   .sidenav li > a > i.material-icons {
+     margin-right: 0;
+   }
+
+
+.sidenav .user-view {
+  height: 200px;
+  position: relative;
+}
+
+.sidenav .user-view .name {
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+}

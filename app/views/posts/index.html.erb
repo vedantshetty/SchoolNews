@@ -40,19 +40,30 @@
           <li class='hide-on-med-and-down'>
             <a class='dropdown-trigger' href='#' data-target='profile'><%= fa_icon 'angle-down', text:'Vedant Shetty', right:true %></a>
           </li>
-          <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><%= fa_icon 'bars' %></a></li>
+          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%= fa_icon 'bars' %></a></li>
       </div>
     </nav>
-
-
-
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
-    </ul>
   </div>
+
+
+
+
+    <!-- Side Nav bar -->
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <div class='user-view'>
+          <div class='background'>
+            <%= image_tag('profile-background.jpg') %>
+          </div>
+          <a href='#'><span class='white-text name center-align'> Vedant Shetty</span></a>
+        </div>
+      </li>
+      <li><a href="sass.html"><%= fa_icon 'power-off'%>Log Out</a></li>
+      <li><a href="badges.html">Search</a></li>
+      <li><div class='divider'></div></li>
+      <li><a href="collapsible.html">Frequently Asked Questions</a></li>
+      <li><a href="mobile.html">Help Center</a></li>
+    </ul>
 
   <ul id='profile' class='dropdown-content'>
     <li><a href='#'>My Profile</a></li>
