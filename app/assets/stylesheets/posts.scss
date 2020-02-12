@@ -15,7 +15,7 @@
 }
 
 .is-navy {
-  background-color: #01347a;
+  background-color: #01347a !important;
 }
 
 .is-navy * {
@@ -50,8 +50,6 @@
 .card-content {
   overflow-x: overlay;
 }
-
-
 
 // TEMP
 .tmp:hover {

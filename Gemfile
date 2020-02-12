@@ -26,8 +26,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 # PostGresSQL database
 gem 'pg', '~> 1.2', '>= 1.2.2'
-# Bulma CSS
-gem 'bulma-rails', '~> 0.8.0'
+
+#A modern responsive front-end framework based on Material Design.
+gem 'materialize-sass', '~> 1.0.0'
 
 # font awesome for icons
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'

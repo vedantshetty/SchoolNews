@@ -15,9 +15,8 @@
  *= require_tree
  */
 
-
- @import 'font-awesome';
- @import 'bulma';
+ @import "materialize";
+ @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
  /* add custom stylesheets here */
  @import 'comments.scss';
