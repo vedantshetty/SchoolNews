@@ -2,8 +2,7 @@
 
 $(document).on('turbolinks:load', function(){
   $('.dropdown-trigger').dropdown({
-    'coverTrigger': false,
-    'constrainWidth': false
+    'coverTrigger': false
   });
     $('select').formSelect();
   

@@ -36,6 +36,7 @@
           </li>
 
           <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
+          <li class='search hide-on-large-only'><a href=''><%= fa_icon 'search' %></a></li>
           <li><a href=''><%= fa_icon 'filter' %></a></li>
 
           <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
@@ -67,6 +68,7 @@
       <li><a href="mobile.html">Help Center</a></li>
     </ul>
 
+  <!-- Profile Dropdown -->
   <ul id='profile' class='dropdown-content'>
     <li><a href='#'>My Profile</a></li>
     <li><a href='#'>Log Out</a></li>
@@ -74,257 +76,14 @@
     <li><a href='#'>F.A.Q</a></li>
     <li><a href='#'> Help Center</a></li>
   </ul>
-
+  
+  <!-- Category Dropdown -->
   <ul id='category' class='dropdown-content'>
     <li><a href='#'>Innovation</a></li>
     <li><a href='#'>Training</a></li>
     <li><a href='#'>Accolades</a></li>
   </ul>
 
-<!-- Modals are here -->
-    <div class="modal is-clipped" id="timepicker">
-      <div class="modal-background" onclick="closeModal()"></div>
-      <div class="modal-content">
-        <div class='box'>
-          <div class='content'>
-            <div class='is-8 has-text-centered'>Show posts between</div>
-          </div>
-        </div>
-      </div>
-      <button class="modal-close is-large" aria-label="close" onclick="closeModal()"></button>
-    </div>
 
-
-<!-- Data is kept here -->
-      <section class ='section'>
-        <div class='container tab-content' id='news'>
-          <% @posts.each do |post| %>
-            <div class = 'card'>
-              <div class='card-content'>
-                <div class ='media'>
-                
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <%= image_tag("https://via.placeholder.com/128.png", :alt=>"Placeholder image") %>
-                    </figure>
-                  </div>
-
-                  <div class='media-right'>
-                    <div class= 'media-content'>
-                      <p class= 'title is-size-6'><%= link_to post.title, post %></p>
-                    </div>
-                    <div class= 'data'>
-                      <%=dateFormater(post.created_at) %>
-                    </div>
-                    <div class ='comment-count'>
-                      Published by: <span class ='tag is-rounded'>Vedant</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <br />
-          <% end %>
-        </div>
-
-        <div class='container tab-content' id='innovation' style="display:none">
-          
-          <div class = 'card'>
-              <div class='card-content'>
-                <div class ='media'>
-                
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <%= image_tag('tmp/i1.jpg', :alt=>"Placeholder image") %>
-                    </figure>
-                  </div>
-
-                  <div class='media-right'>
-                    <div class= 'media-content'>
-                      <p class= 'title is-size-6'>
-                        <a href ="https://education.cu-portland.edu/blog/leaders-link/educational-innovations-changing-the-classroom/" target="_blank">
-                          7 Educational Innovations Changing The Classroom </a>
-                      </p>
-                    </div>
-                    <div class= 'data'>03-02-2020</div>
-                    <div class ='comment-count'>
-                      Published by: <span class ='tag is-rounded'>Vedant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <%= image_tag('tmp/i3.jpg', :alt=>"Placeholder image") %>
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4"><%=link_to '7 reasons why we need innovation in schools' %></p>
-                  <p class="subtitle is-6">Published By Vedant Shetty</p>
-                </div>
-              </div>
-
-              <div class="content">
-                <time datetime="2016-1-1">02-02-2020</time>
-              </div>
-            </div>
-          </div>
-
-
-            <br />
-            <div class = 'card'>
-              <div class='card-content has-text-centered'>
-                <iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/5QN8H0S-AR4">
-                </iframe>
-                <div class ='comment-count'>
-                  Published by: <span class ='tag is-rounded'>Vedant</span>
-                </div>
-
-                <p class="content">
-                  <span>02-02-2020</span>
-                </p>
-              </div>
-              
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>View on  <a href="https://www.youtube.com/watch?v=5QN8H0S-AR4">Youtube</a></span>
-                </p>
-              </footer>
-            </div>
-
-            <br />
-            <div class = 'card'>
-              <div class='card-content'>
-                <p class= 'title is-size-4'>Mumbai School Innovation Fair Will Be On 22nd October
-                </p>
-
-                <p class='subtitle is-size-6'> 02-02-2020</p>
-                <p class="subtitle ">Vedant Shetty</p>
-              </div>
-              
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>Share on <a href="#">Facebook</a></span>
-                </p>
-              </footer>
-            </div>
-            <br />
-
-                      <div class = 'card'>
-              <div class='card-content'>
-                <div class ='media'>
-                
-                  <div class="media-left">
-                    <figure class="image is-64x64">
-                      <%= image_tag('tmp/i2.jpg', :alt=>"Placeholder image") %>
-                    </figure>
-                  </div>
-
-                  <div class='media-right'>
-                    <div class= 'media-content'>
-                      <p class= 'title is-size-6'>
-                        <a href ="https://3dexter.com/5-recent-innovations-welcomed-schools-india/" target="_blank">
-                          5 Recent Innovations of 2018 Welcomed by Schools in India </a>
-                      </p>
-                    </div>
-                    <div class= 'data'>02-02-2020</div>
-                    <div class ='comment-count'>
-                      Published by: <span class ='tag is-rounded'>Vedant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <div class='container tab-content' id='training' style="display:none">
-        <div class = 'card'>
-              <div class='card-content'>
-                <p class= 'title is-size-4'>Quantum Computing Workshop</p>
-
-                <p class=' is-size-7'> 05-02-2020</p>
-                <p class="is-size-7 ">Vedant Shetty</p>
-              </div>
-              
-              <a href=""><footer class="card-footer">
-                <p class="card-footer-item tmp">
-                  <span>Click Here To Learn More</span>
-                </p>
-              </footer></a>
-            </div>
-            <br />
-
-
-            <div class = 'card'>
-              <div class='card-content'>
-                <p class= 'title is-size-4'>Teachers Training Session on 23rd September
-                </p>
-                <p class= 'content'> HFS Powai is holding a teachers training event near kanjurmarg at IThink Lodha Campus</p>
-
-                <p class=' is-size-7'> 05-02-2020</p>
-                <p class="is-size-7 ">Vedant Shetty</p>
-              </div>
-              
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>Click <a href="#">Here</a> to register</span>
-                </p>
-              </footer>
-            </div>
-            <br />
-
-            <div class = 'card'>
-              <div class='card-content'>
-                <p class= 'title is-size-4'>Abstract Paininting Workshop by Shobha on 8th Feb
-                </p>
-                <div class= 'content'>  
-                <p>Abstraction indicates a departure from reality in depiction of imagery in art. If you haven't tried this, well we are giving you a chance to create your own masterpiece.</p>
-                <p>Join with us and paint this amazing painting using a palette knife.Take home your own made painting. Rejuvenate yourself, paint with fun and do something different.</p>
-                <p>Painting for you can become a great way to reduce stress and make you relax. You only need to try! You will see how amazing it is if you let yourself to unleash your 
-                creative abilities. It works as a stress buster from the exam's pressure, Office load & Business target.</p>
-                What you will learn:
-                <ul>
-                <li>Basics about colors & canvas</li>
-                <li>Apply colors on canvas</li>
-                <li>Create different color strokes</li>
-                <li>How to create color patterns</li>
-                <li>Anyone above 14 years can join.</li>
-                <p><strong>Note:</strong> All the material will be provided.</p>
-                <em>Special offer if you have attended before. So, grab your seat now.</em>
-                <p><strong>Location:</strong> 4th Floor, Flat No 408, Everest -4B,<br /> Mahakali Caves Road,<br /> Andheri east</p>
-                <p><strong>Date:</strong> 8th Feb 2020</p>
-                <p><strong>Time:</strong> 11 am to 2 pm</p>
-                <p><strong>Price:</strong> 1700</p>
-
-                <p class=' is-size-7'> 05-02-2020</p>
-                <p class="is-size-7 ">Vedant Shetty</p>
-              </div>
-              
-              <footer class="card-footer">
-                <p class="card-footer-item">
-                  <span>Click <a href="https://www.eventshigh.com/detail/mumbai/ba6dffaa8399f973786cba7eaec6b399-abstract-painting-party-workshop-by?src=ecbox">Here</a> to register</span>
-                </p>
-              </footer>
-            </div>
-        </div>
-
-        </div>
-
-        <div class='container tab-content' id='accolades' style="display:none">
-          Accolades are empty
-        </section>
-
-    <section class='section'>
-      <button class="fab button is-hidden-desktop is-danger">
-        <%= link_to fa_icon('plus'), new_post_path, class:'has-text-white' %>
-      </button>
-    </section>
   </body>
 </html>

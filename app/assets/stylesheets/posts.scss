@@ -6,15 +6,6 @@
   color: white;
 }
 
-
-ul.dropdown-content.select-dropdown li span {
-  color: #000; /* no need for !important :) */
-}
-
-.search:hover {
-  background-color: white;
-}
-
 .navbar-fixed li {
   margin:5px
 }
@@ -29,12 +20,30 @@ nav .brand-logo {
   padding-left: 25px;
 }
 
+.category-select a {
+  font-size: large;
+}
+
+.dropdown-content:focus {
+  display: table !important;
+}
+
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
     padding-left: 25px;
     left: 0;
     transform: translateX(0);
   }
+
+  .category-select {
+    position: absolute;
+    right: 45%;
+  }
+  
+}
+
+.fa-angle-down {
+  height: fit-content;
 }
 
 
