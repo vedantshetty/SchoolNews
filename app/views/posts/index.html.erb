@@ -1,168 +1,70 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Atlas: School News</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<%= render 'index_header' %>
 
-    <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': "reload" %>
-    <%= favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type:'image/jpeg' %>
-    <link rel="manifest" href="/manifest.json">          
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#01347A"/>
-  </head>
-
-  <body>
-    <% if notice %>
-      <p class='alert alert-success has-text-centered'><%= notice %></p>
-    <% end %>
-
-    <% if alert %>
-      <p class ='alert alert-danger has-text-centered'><%= alert %></p>
-    <% end %>
-
-<!-- topmost header -->
-  <div class='navbar-fixed'>
-    <nav class ='indigo darken-4'>
-      <div class='nav-wrapper'>
-        <a href='#' class='brand-logo'>Atlas</a>
-        <ul id='nav-mobile' class='right'>
-          <li class='category-select input-field'>
-            <a class='dropdown-trigger' href='#' data-target = 'category'><%= fa_icon 'angle-down', text:'News', right:true %></a>
-          </li>
-
-
-          <li class=' hide-on-large-only'>
-            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= fa_icon 'ellipsis-v'%></a>
-          </li>
-
-          <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
-          <li class='search hide-on-large-only'></li>
-          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'filter' %></a></li>
-
-          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
-          <li class='hide-on-med-and-down'>
-            <a class='dropdown-trigger' href='#' data-target='profile'><%= fa_icon 'angle-down', text:'Vedant Shetty', right:true %></a>
-          </li>
-          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%= fa_icon 'bars' %></a></li>
-      </div>
-    </nav>
-  </div>
-
-  <!-- Vertical Elipsis -->
-  <ul id='vertical-elipses' class='dropdown-content'>
-    <li><a href=''><%= fa_icon 'search', text:' Search'  %></a></li>
-    <li><a href=''><%= fa_icon 'filter', text:' Filter' %></a></li>
-  </ul>
-
-
-
-    <!-- Side Nav bar -->
-    <ul class="sidenav" id="mobile-nav">
-      <li>
-        <div class='user-view'>
-          <div class='background'>
-            <%= image_tag('profile-background.jpg') %>
-          </div>
-          <a href='#'><span class='white-text name center-align'> Vedant Shetty</span></a>
-        </div>
-      </li>
-      <li><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
-      <li><a href="sass.html"><%= fa_icon 'power-off'%>Log Out</a></li>
-      <li><div class='divider'></div></li>
-      <li><a href="collapsible.html" class='waves-effect'>Frequently Asked Questions</a></li>
-      <li><a href="mobile.html">Help Center</a></li>
-    </ul>
-
-  <!-- Profile Dropdown -->
-  <ul id='profile' class='dropdown-content'>
-    <li><a href='#'>My Profile</a></li>
-    <li><a href='#'>Log Out</a></li>
-    <li class='divider' tabindex='-1'></li>
-    <li><a href='#'>F.A.Q</a></li>
-    <li><a href='#'> Help Center</a></li>
-  </ul>
-  
-  <!-- Category Dropdown -->
-  <ul id='category' class='dropdown-content'>
-    <li><a href='#'>Innovation</a></li>
-    <li><a href='#'>Training</a></li>
-    <li><a href='#'>Accolades</a></li>
-  </ul>
-
-
-  <!-- Posts -->
-  <div class="preloader-wrapper big active">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
+<!-- Posts -->
+<div class="preloader-wrapper big active">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
     </div>
   </div>
-  <section class='content container' style='display:none'>
+</div>
+<section class='content container' style='display:none'>
 
-    <div class ='post card hoverable'>
-      <div class='card-image'>
-        <%= image_tag 'tmp/n2.jpg', class:'responsive-img' %>
-        <span class='flow-text truncate card-title'>Zion Williamson is dominating the NBA like it’s just another basketball league</span>
+  <div class ='post card hoverable'>
+    <div class='card-image'>
+      <%= image_tag 'tmp/n2.jpg', class:'responsive-img' %>
+      <span class='flow-text truncate card-title'>Zion Williamson is dominating the NBA like it’s just another basketball league</span>
+      <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
+    </div>
+    <div class='card-content'>
+      <p class='flow-text grey-text text-darken-4'>Zion Williamson is physically overwhelming NBA players the same way he did college players the same way he did high school players. Nine games into..</p>
+    </div>
+    <div class='card-action'>
+      <p class='flow-text grey-text text-darken-3'><%= fa_icon 'youtube' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
+    </div>
+  </div>
+
+  <div class ='post card hoverable'>
+    <div class='card-image no-image'>
+      <span class='flow-text truncate card-title blue-grey'>Pistons’ Derrick Rose to play vs. Magic after missing 5 games, be on minutes restriction</span>
+      <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
+    </div>
+    <div class='card-content'>
+      <p class='flow-text grey-text text-darken-4'>Detroit Pistons point guard Derrick Rose will play on Wednesday against the Orlando Magic after missing the previous five games due to a hip injury.</p>
+    </div>
+    <div class='card-action'>
+      <p class='flow-text grey-text text-darken-3'><%= fa_icon 'paperclip' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
+    </div>
+  </div>
+
+  <div class ='post card hoverable'>
+    <div class='card-image no-image'>
+      <span class='flow-text truncate card-title blue-grey'>Mavs star Kristaps Porzingis reacts to his 27-13 game in Luka Doncic’s return</span>
+      <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
+    </div>
+    <div class='card-content'>
+      <p class='flow-text grey-text text-darken-4'>Big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game in the...</p>
+    </div>
+    <div class='card-action'>
+      <p class='flow-text grey-text text-darken-3'><%= fa_icon 'file' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 9th Feb 2020</p>
+    </div>
+  </div>
+
+  <div class ='post card hoverable'>
+    <div class='card-image'>
+      <%= image_tag 'tmp/n1.jpg', class:'responsive-img' %>
+      <span class='flow-text truncate card-title'>Luka Doncic, Kristaps Porzingis shine as a duo in Doncic's return from injury</span>
         <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
-      </div>
-      <div class='card-content'>
-        <p class='flow-text grey-text text-darken-4'>Zion Williamson is physically overwhelming NBA players the same way he did college players the same way he did high school players. Nine games into..</p>
-      </div>
-      <div class='card-action'>
-        <p class='flow-text grey-text text-darken-3'><%= fa_icon 'youtube' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
-      </div>
     </div>
-
-    <div class ='post card hoverable'>
-      <div class='card-image no-image'>
-        <span class='flow-text truncate card-title blue-grey'>Pistons’ Derrick Rose to play vs. Magic after missing 5 games, be on minutes restriction</span>
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
-      </div>
-      <div class='card-content'>
-        <p class='flow-text grey-text text-darken-4'>Detroit Pistons point guard Derrick Rose will play on Wednesday against the Orlando Magic after missing the previous five games due to a hip injury.</p>
-      </div>
-      <div class='card-action'>
-        <p class='flow-text grey-text text-darken-3'><%= fa_icon 'paperclip' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
-      </div>
+    <div class='card-content'>
+      <p class='flow-text grey-text text-darken-4'>Dallas Mavericks big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game..</p>
     </div>
-
-    <div class ='post card hoverable'>
-      <div class='card-image no-image'>
-        <span class='flow-text truncate card-title blue-grey'>Mavs star Kristaps Porzingis reacts to his 27-13 game in Luka Doncic’s return</span>
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
-      </div>
-      <div class='card-content'>
-        <p class='flow-text grey-text text-darken-4'>Big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game in the...</p>
-      </div>
-      <div class='card-action'>
-        <p class='flow-text grey-text text-darken-3'><%= fa_icon 'file' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 9th Feb 2020</p>
-      </div>
+    <div class='card-action'>
+      <p class='flow-text grey-text text-darken-3'>Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
     </div>
-
-    <div class ='post card hoverable'>
-      <div class='card-image'>
-        <%= image_tag 'tmp/n1.jpg', class:'responsive-img' %>
-        <span class='flow-text truncate card-title'>Luka Doncic, Kristaps Porzingis shine as a duo in Doncic's return from injury</span>
-         <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
-      </div>
-      <div class='card-content'>
-        <p class='flow-text grey-text text-darken-4'>Dallas Mavericks big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game..</p>
-      </div>
-      <div class='card-action'>
-        <p class='flow-text grey-text text-darken-3'>Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
-      </div>
-    </div>
-  </section>
-
-  </body>
-</html>
+  </div>
+</section>

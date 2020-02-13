@@ -10,8 +10,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': "reload" %>
     <%= favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type:'image/jpeg' %>
-    <link rel="manifest" href="/manifest.json">
-    
+    <link rel="manifest" href="/manifest.json">          
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#01347A"/>
   </head>
@@ -24,27 +24,24 @@
     <% if alert %>
       <p class ='alert alert-danger has-text-centered'><%= alert %></p>
     <% end %>
-
-    <section class="hero is-navy is-small">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <%= fa_icon 'chevron-left lg', class:'navbar-item', onclick: "history.back()" %>
-              <h1 class='title'><%= link_to 'Atlas', root_path, class: "navbar-item" %></h1>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-            <% if user_signed_in? %>
-              <div class="navbar-end">
-                <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-              </div>
-            <% end %>
-            </div>
+    
+  <!-- Side Nav bar -->
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <div class='user-view'>
+          <div class='background'>
+            <%= image_tag('profile-background.jpg') %>
           </div>
-        </nav>
-      </div>
-      </section>
-    <%= yield %>
-  </body>
+          <a href='#'><span class='white-text name center-align'> Vedant Shetty</span></a>
+        </div>
+      </li>
+      <li><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
+      <li><a href="sass.html"><%= fa_icon 'power-off'%>Log Out</a></li>
+      <li><div class='divider'></div></li>
+      <li><a href="collapsible.html" class='waves-effect'>Frequently Asked Questions</a></li>
+      <li><a href="mobile.html">Help Center</a></li>
+    </ul>
+  <%= yield %>
+
+</body>
 </html>

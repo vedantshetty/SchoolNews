@@ -1,0 +1,51 @@
+<!-- topmost header -->
+  <div class='navbar-fixed'>
+    <nav class ='indigo darken-4'>
+      <div class='nav-wrapper'>
+        <a href='#' class='brand-logo'>Atlas</a>
+
+        <ul id='nav-mobile' class='right'>
+          <li class='category-select input-field'>
+            <a class='dropdown-trigger' href='#' data-target = 'category'><%= fa_icon 'angle-down', text:'News', right:true %></a>
+          </li>
+
+
+          <li class=' hide-on-large-only'>
+            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= fa_icon 'ellipsis-v'%></a>
+          </li>
+
+          <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
+          <li class='search hide-on-large-only'></li>
+          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'filter' %></a></li>
+
+          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
+          <li class='hide-on-med-and-down'>
+            <a class='dropdown-trigger' href='#' data-target='profile'><%= fa_icon 'angle-down', text:'Vedant Shetty', right:true %></a>
+          </li>
+          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%= fa_icon 'bars' %></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Vertical Elipsis -->
+  <ul id='vertical-elipses' class='dropdown-content'>
+    <li><a href=''><%= fa_icon 'search', text:' Search'  %></a></li>
+    <li><a href=''><%= fa_icon 'filter', text:' Filter' %></a></li>
+  </ul>
+
+  <!-- Profile Dropdown -->
+  <ul id='profile' class='dropdown-content'>
+    <li><a href='#'>My Profile</a></li>
+    <li><a href='#'>Log Out</a></li>
+    <li class='divider' tabindex='-1'></li>
+    <li><a href='#'>F.A.Q</a></li>
+    <li><a href='#'> Help Center</a></li>
+  </ul>
+  
+  <!-- Category Dropdown -->
+  <ul id='category' class='dropdown-content'>
+    <li><a href='#'>Innovation</a></li>
+    <li><a href='#'>Training</a></li>
+    <li><a href='#'>Accolades</a></li>
+  </ul>
