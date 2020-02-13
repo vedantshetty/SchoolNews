@@ -7,7 +7,6 @@ $(document).on('turbolinks:load', function(){
     $('select').formSelect();
   
     $('.sidenav').sidenav({
-      'edge': 'right'
     });
 
     $('.fixed-action-btn').floatingActionButton();

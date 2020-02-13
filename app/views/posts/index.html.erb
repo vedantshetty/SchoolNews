@@ -35,9 +35,14 @@
             <a class='dropdown-trigger' href='#' data-target = 'category'><%= fa_icon 'angle-down', text:'News', right:true %></a>
           </li>
 
+
+          <li class=' hide-on-large-only'>
+            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= fa_icon 'ellipsis-v'%></a>
+          </li>
+
           <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
-          <li class='search hide-on-large-only'><a href=''><%= fa_icon 'search' %></a></li>
-          <li><a href=''><%= fa_icon 'filter' %></a></li>
+          <li class='search hide-on-large-only'></li>
+          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'filter' %></a></li>
 
           <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
           <li class='hide-on-med-and-down'>
@@ -48,6 +53,11 @@
     </nav>
   </div>
 
+  <!-- Vertical Elipsis -->
+  <ul id='vertical-elipses' class='dropdown-content'>
+    <li><a href=''><%= fa_icon 'search', text:' Search'  %></a></li>
+    <li><a href=''><%= fa_icon 'filter', text:' Filter' %></a></li>
+  </ul>
 
 
 
@@ -88,41 +98,43 @@
   <!-- Posts -->
   <section class='content container'>
 
-    <div class ='post'>
-      <div class='title'>
-        <h2 class='flow-text truncate'>Zion Williamson is dominating the NBA like it’s just another basketball league</h2>
+    <div class ='post card hoverable'>
+      <div class='card-image'>
+        <%= image_tag 'tmp/n2.jpg', class:'responsive-img' %>
+        <span class='flow-text truncate card-title'>Zion Williamson is dominating the NBA like it’s just another basketball league</span>
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
       </div>
-      <div class='meta'>
+      <div class='card-content'>
+        <p class='flow-text grey-text text-darken-4'>Zion Williamson is physically overwhelming NBA players the same way he did college players the same way he did high school players. Nine games into..</p>
+      </div>
+      <div class='card-action'>
         <p class='flow-text grey-text text-darken-3'><%= fa_icon 'youtube' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
       </div>
-      <div class='content'>
-      <p class='flow-text grey-text text-darken-4'>Zion Williamson is physically overwhelming NBA players the same way he did college players the same way he did high school players. Nine games into..</p>
-      </div>
     </div>
 
-
-    <div class ='post'>
-      <div class='title'>
-        <h2 class='flow-text truncate'>Pistons’ Derrick Rose to play vs. Magic after missing 5 games, be on minutes restriction</h2>
+    <div class ='post card hoverable'>
+      <div class='card-image no-image'>
+        <span class='flow-text truncate card-title blue-grey'>Pistons’ Derrick Rose to play vs. Magic after missing 5 games, be on minutes restriction</span>
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
       </div>
-      <div class='meta'>
+      <div class='card-content'>
+        <p class='flow-text grey-text text-darken-4'>Detroit Pistons point guard Derrick Rose will play on Wednesday against the Orlando Magic after missing the previous five games due to a hip injury.</p>
+      </div>
+      <div class='card-action'>
         <p class='flow-text grey-text text-darken-3'><%= fa_icon 'paperclip' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 3rd Feb 2020</p>
       </div>
-      <div class='content'>
-      <p class='flow-text grey-text text-darken-4'>Detroit Pistons point guard Derrick Rose will play on Wednesday against the Orlando Magic after missing the previous five games due to a hip injury.</p>
-      </div>
     </div>
 
-
-    <div class ='post'>
-      <div class='title'>
-        <h2 class='flow-text truncate'>Mavs star Kristaps Porzingis reacts to his 27-13 game in Luka Doncic’s return</h2>
+    <div class ='post card hoverable'>
+      <div class='card-image no-image'>
+        <span class='flow-text truncate card-title blue-grey'>Mavs star Kristaps Porzingis reacts to his 27-13 game in Luka Doncic’s return</span>
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><%= fa_icon 'comments' %></a>
       </div>
-      <div class='meta'>
-        <p class='flow-text grey-text text-darken-3'><%= fa_icon 'file' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 12th Feb 2020</p>
+      <div class='card-content'>
+        <p class='flow-text grey-text text-darken-4'>Big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game in the...</p>
       </div>
-      <div class='content'>
-      <p class='flow-text grey-text text-darken-4'>Big man Kristaps Porzingis effectively shut down talks that he only plays well without Luka Doncic, as both players bagged a monster game in the...</p>
+      <div class='card-action'>
+        <p class='flow-text grey-text text-darken-3'><%= fa_icon 'file' %> Published by <span class='blue-text text-accent-3'>Vedant</span> on 9th Feb 2020</p>
       </div>
     </div>
 

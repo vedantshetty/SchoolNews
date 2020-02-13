@@ -17,6 +17,11 @@ nav .sidenav-trigger {
   margin: 0 0;
 }
 
+nav .sidenav-trigger {
+  position: absolute;
+  left: 0px;
+}
+
 
 nav .brand-logo {
   padding-left: 25px;
@@ -31,23 +36,35 @@ nav .brand-logo {
   display: table !important;
 }
 
+.dropdown-content li {
+  min-height: fit-content;
+}
+.dropdown-content li > a {
+  padding: 5px;
+}
+.dropdown-content li > a > i {
+  width: fit-content;
+  margin: 0;
+  margin-right: 5px;
+}
 
 @media only screen and (max-width: 992px) {
-  nav .brand-logo {
-    padding-left: 25px;
-    left: 0;
-    transform: translateX(0);
-  }
 
   .category-select {
     position: absolute;
-    right: 40%;
+    padding-left: 25px;
+    left: 0;
   }
   
 }
 
 .fa-angle-down {
   height: fit-content;
+}
+
+.fa-ellipsis-v {
+  height: fit-content;
+  font-size: large;
 }
 
 
@@ -98,4 +115,13 @@ nav .brand-logo {
 .post {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
+}
+
+
+.card .no-image .card-title {
+  position: relative;
+}
+
+.card .card-image .card-title {
+  background-color: rgba($color: #000000, $alpha: 0.4);
 }
