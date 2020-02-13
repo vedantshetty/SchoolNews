@@ -9,4 +9,6 @@ $(document).on('turbolinks:load', function(){
     $('.sidenav').sidenav({
       'edge': 'right'
     });
+
+    $('.fixed-action-btn').floatingActionButton();
 })

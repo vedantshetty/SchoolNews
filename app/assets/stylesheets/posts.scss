@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+// Navbar styles
 .select-dropdown {
   color: white;
 }
@@ -22,11 +24,13 @@ nav .brand-logo {
 
 .category-select a {
   font-size: large;
+  padding-right: 1em;
 }
 
 .dropdown-content:focus {
   display: table !important;
 }
+
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
@@ -37,7 +41,7 @@ nav .brand-logo {
 
   .category-select {
     position: absolute;
-    right: 45%;
+    right: 40%;
   }
   
 }
@@ -67,4 +71,31 @@ nav .brand-logo {
   position: absolute;
   bottom: 5px;
   font-size: 24px;
+}
+
+
+
+// Content Styles
+
+.title h2 {
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.meta p {
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: medium;
+  margin-top: 5px;
+}
+
+
+.post {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
 }
