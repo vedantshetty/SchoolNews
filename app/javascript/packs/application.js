@@ -3,7 +3,8 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import 'materialize-css/dist/js/materialize'
+window.jQuery = $;
+window.$ = $;
 
 require("@rails/ujs").start()
 require("turbolinks").start()
@@ -33,15 +34,4 @@ if (navigator.serviceWorker) {
 
 
 
-
-$(document).on('turbolinks:load', function(){
-  $('.dropdown-trigger').dropdown({
-    'coverTrigger': false,
-    'constrainWidth': false
-  });
-    $('select').formSelect();
-  
-    $('.sidenav').sidenav({
-      'edge': 'right'
-    });
-})
+import '../stylesheets/application.scss'
