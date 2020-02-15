@@ -1,62 +1,40 @@
-html, body {
-  height: 100%;
-}
-
-.devise {
-    padding-top: 240px;
-    background-image: image-url('login-background.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-}
-
-.devise * {
-  color: white;
+.row .col.info {
+  padding-right: 1.75rem;
+  padding-left:  1.75rem;
+  padding-top: 1.75rem;
 }
 
 
-.devise .input {
-   border-width: 0;
-   background-color: rgba(0,0,255, 0.2);
-
+.image {
+  height: 93vh;
 }
 
-.devise input {
-  border-width: 0px;
-  color: white;
-  width: 360px;
-  background-color: transparent
-}
 
-.devise input:focus {
-  outline: none !important;
-  border-bottom:1px solid red;
-}
-
-#user_remember_me {
-  width: fit-content;
-}
-.devise .button {
-  background-color: rgba(0,0,255, 0.4);
-  padding-left: 160px;
-  padding-right: 160px;
-}
-
-.devise .simple_form {
-  text-align: center;
+.image h1 {
   margin: 0 auto;
-  width: 360px;
 }
 
-.devise ::-webkit-input-placeholder { /* Edge */
-  color: white;
+
+.section.registration {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.devise :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+.section.registration .row {
+  margin-bottom: 0;
 }
 
-.devise ::placeholder {
-  color: white;
+
+
+.form-inputs .input input{
+  max-width: 400px;
+}
+
+
+
+@media only screen and (max-width:601px) {
+
+  .row .col.info {
+    padding-top: 30%;
+  }
 }

@@ -1,33 +1,35 @@
-<div class='devise has-text-centered'>
-  <h2 class='title'>Sign up</h2>
-
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= f.error_notification %>
-
-    <div class="form-inputs">
+<%= render 'devise/shared/header' %>
+<section class='section registration'>
+  <div class='row valign-wrapper'>
+    <div class='col hide-on-small-only m6 l4 blue-grey image valign-wrapper white-text'><h1>Stay Updated</h1></div>
+    <div class=' col s12  m6  l8 center-align info'>
+      <h2 class='title'>Register For Atlas</h2>
+      <%= simple_form_for(resource, as:resource_name, url: session_path(resource_name)) do |f| %>
+        <div class='form-inputs'>
           <%= f.input :email,
                       required: true,
+                      label: true,
                       autofocus: true,
-                      placeholder: 'Email',
-                      label: false,
-                      input_html: { autocomplete: "email" }%>
-          <%= f.input :password,
-                      required: true,
-                      placeholder: 'Password',
-                      label: false,
-                      input_html: { autocomplete: "new-password" } %>
-          <%= f.input :password_confirmation,
-                      required: true,
-                      placeholder: 'Password Confirmation',
-                      label: false,
-                      input_html: { autocomplete: "new-password" } %>
+                      placeholder: 'ADID',
+                      label: false %> 
+          
+        <%= f.input :password,
+                    required: true,
+                    label: false,
+                    placeholder: 'Password',
+                    input_html: { autocomplete: "new-password" } %>
 
-    </div>
+        <%= f.input :password_confirmation,
+                    required: true,
+                    placeholder: 'Password Confirmation',
+                    label: false,
+                    input_html: {autocomplete: 'new-password'} %>
 
-    <div class="form-actions">
-      <%= f.button :submit, "Sign up", class:'button is-primary' %>
+        <div class='form-actions'>
+          <%= f.button :submit, "Sign Up", class:'button is-primary' %>
+        </div>
+      <% end %>
+      <%= render "devise/shared/links" %>
     </div>
-  <% end %>
-  
-  <%= render "devise/shared/links" %>
-</div>
+  </div>
+</section>
