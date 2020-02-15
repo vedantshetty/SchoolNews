@@ -6,21 +6,22 @@
       <h2 class='title'>Log Into <span class='red-text'>A</span>tlas</h2>
       <%= simple_form_for(resource, as:resource_name, url: session_path(resource_name)) do |f| %>
         <div class='form-inputs'>
-          <%= f.input :email,
-                      required: true,
-                      label: true,
+          <%= f.input :adid,
                       autofocus: true,
                       placeholder: 'ADID',
+                      wrapper_html: {class:'input-field'},
                       class: 'validate',
+                      input_html: {autocomplete: 'username'},
                       label: false %> 
           
         <%= f.input :password,
-                    required: true,
                     label: false,
                     placeholder: 'Password',
+                    wrapper_html: {class:'input-field'},
                     class: 'validate',
                     input_html: { autocomplete: "current-password" } %>
-        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
+        <%= f.input :remember_me, as: :boolean, inline_label: 'Remember' if devise_mapping.rememberable? %>
 
         <div class='form-actions'>
           <%= f.button :submit, "Log in", class:'button is-primary' %>

@@ -3,30 +3,60 @@
   <div class='row valign-wrapper'>
     <div class='col hide-on-small-only m6 l4 blue-grey image valign-wrapper white-text'><h1>Stay Updated</h1></div>
     <div class=' col s12  m6  l8 center-align info'>
-      <h2 class='title'>Register For Atlas</h2>
+      <h2 class='title'>Register For <span class='red-text'>A</span>tlas</h2>
       <%= simple_form_for(resource, as:resource_name, url: session_path(resource_name)) do |f| %>
         <div class='form-inputs'>
-          <%= f.input :email,
-                      required: true,
-                      label: true,
-                      autofocus: true,
-                      placeholder: 'ADID',
-                      label: false %> 
-          
-        <%= f.input :password,
-                    required: true,
-                    label: false,
-                    placeholder: 'Password',
-                    input_html: { autocomplete: "new-password" } %>
+          <h6>Enter Your ADID</h6>
+          <div class='input-field'>
+            <%= f.input_field :adid,
+                        autofocus: true,
+                        placeholder: 'ADID',
+                        input_html: {autocomplete: "username", class:'validate'},
+                        label: false %> 
+            
+            <span class='helper-text' data-error=<%= f.error :adid %> ></span>
+          </div>
+        
+        <h6>What's your name?</h6>
+        <div class='row'>
+          <div class='col s12 m6 input-field r'>
+            <%= f.input_field :firstName,
+                        label: false,
+                        input_html: {autocomplete: "give-name", class:"validate"},
+                        placeholder: 'First Name' %>
+            <span class='helper-text' data-error=<%= f.error :firstName %> ></span>
+          </div>
+        <div class='col s12 m6 input-field l'>
+          <%= f.input_field :lastName,
+                      label: false,
+                      input_html: {autocomplete: "family-name", class:"validate"},
+                      placeholder: 'Last Name'%>
+            
+          <span class='helper-text' data-error=<%= f.error :lastName %> ></span>
+        </div>
 
-        <%= f.input :password_confirmation,
-                    required: true,
-                    placeholder: 'Password Confirmation',
-                    label: false,
-                    input_html: {autocomplete: 'new-password'} %>
+        </div>
+        <h6>Enter Your Login Password</h6>
+        <div class='row'>
+          <div class='col s12 m6 input-field r'>
+            <%= f.input_field :password,
+                        label: false,
+                        placeholder: 'Password',
+                        input_html: { autocomplete: "new-password", class:'validate'} %>
+            
+            <span class='helper-text' data-error=<%= f.error :password %> ></span>
+          </div>
+        <div class='col s12 m6 input-field l'>
+            <%= f.input_field :password_confirmation,
+                        placeholder: 'Password Confirmation',
+                        label: false,
+                        input_html: {autocomplete: 'new-password', class:'validate'} %>
+            
+            <span class='helper-text' data-error="Passwords don't match"> ></span>
+        </div>
 
         <div class='form-actions'>
-          <%= f.button :submit, "Sign Up", class:'button is-primary' %>
+          <%= f.button :submit, "Sign Up", class:'button wave is-primary' %>
         </div>
       <% end %>
       <%= render "devise/shared/links" %>
