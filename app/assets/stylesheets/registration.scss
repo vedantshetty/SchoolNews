@@ -30,13 +30,24 @@
   max-width: 400px;
 }
 
+.user_remember_me {
+  padding: 0.75rem
+}
 
-
+.waves-button-input {
+  color: white;
+  width: 20vw;
+  max-width: 300px;
+}
 
 @media only screen and (max-width:601px) {
 
   .row .col.info {
     padding-top: 30%;
+  }
+
+  .waves-button-input {
+    width: 40vw;
   }
 }
 
@@ -48,4 +59,10 @@
   .row .m6.input-field.r input {
     float: right;
   }
+}
+
+
+
+.divider {
+  margin: 1.75rem;
 }
