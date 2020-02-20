@@ -35,11 +35,11 @@
           <a href='#'><span class='white-text name center-align'> Vedant Shetty</span></a>
         </div>
       </li>
-      <li><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
-      <li><a href="sass.html"><%= fa_icon 'power-off'%>Log Out</a></li>
+      <li><a href='' class='waves-effect'><%= icon('fa','edit') %> Create a new post</a></li>
+      <li><a href="sass.html" class='waves-effect'><%= icon('fas','sign-out-alt')%>Log Out</a></li>
       <li><div class='divider'></div></li>
-      <li><a href="collapsible.html" class='waves-effect'>Frequently Asked Questions</a></li>
-      <li><a href="mobile.html">Help Center</a></li>
+      <li><a href="collapsible.html" class='waves-effect'><%= icon('fas','question-circle')%> Frequently Asked Questions</a></li>
+      <li><a href="mobile.html" class='waves-effect'><%= icon('fa', 'info-circle') %>Help Center</a></li>
     </ul>
   <%= yield %>
 

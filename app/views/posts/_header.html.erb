@@ -5,24 +5,23 @@
         <a href='#' class='brand-logo'>Atlas</a>
 
         <ul id='nav-mobile' class='right'>
-          <li class='category-select input-field'>
-            <a class='dropdown-trigger' href='#' data-target = 'category'><%= fa_icon 'angle-down', text:'News', right:true %></a>
+          <li class='category-select input-field hide-on-med-and-down'>
+            <a class='dropdown-trigger' href='#' data-target = 'category'><%#= fa_icon 'angle-down', text:'News', right:true %></a>
           </li>
 
 
           <li class=' hide-on-large-only'>
-            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= fa_icon 'ellipsis-v'%></a>
+            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= icon('fa','ellipsis-v')%></a>
           </li>
 
           <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
-          <li class='search hide-on-large-only'></li>
-          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'filter' %></a></li>
+          <li class='hide-on-med-and-down'><a href=''><%= icon('fa','filter') %></a></li>
 
-          <li class='hide-on-med-and-down'><a href=''><%= fa_icon 'edit' %> Create a new post</a></li>
+          <li class='hide-on-med-and-down'><a href=''><%= icon('fa','edit') %> Create a new post</a></li>
           <li class='hide-on-med-and-down'>
-            <a class='dropdown-trigger' href='#' data-target='profile'><%= fa_icon 'angle-down', text:'Vedant Shetty', right:true %></a>
+            <a class='dropdown-trigger' href='#' data-target='profile'>Vedant Shetty<%=icon('fa','angle-down')%></a>
           </li>
-          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%= fa_icon 'bars' %></a></li>
+          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%=icon('fa','bars') %></a></li>
         </ul>
       </div>
     </nav>
@@ -30,8 +29,8 @@
 
   <!-- Vertical Elipsis -->
   <ul id='vertical-elipses' class='dropdown-content'>
-    <li><a href=''><%= fa_icon 'search', text:' Search'  %></a></li>
-    <li><a href=''><%= fa_icon 'filter', text:' Filter' %></a></li>
+    <li><a href=''><div class='dropdown-icon'><%= icon('fa','search')%></div> Search</a></li>
+    <li><a href=''><div class='dropdown-icon'><%= icon('fa','filter')%></div> Filter</a></li>
   </ul>
 
   <!-- Profile Dropdown -->

@@ -31,7 +31,7 @@ gem 'pg', '~> 1.2', '>= 1.2.2'
 gem 'materialize-sass', '~> 1.0.0'
 
 # font awesome for icons
-gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
 # Reduces boot times through caching; required in config/boot.rb

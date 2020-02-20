@@ -32,22 +32,28 @@ nav .brand-logo {
   padding-right: 1em;
 }
 
+
+// Ellipsis Dropdown
 .dropdown-content:focus {
   display: table !important;
+}
+
+.dropdown-content li > a {
+  padding: 5px;
 }
 
 .dropdown-content li {
   min-height: fit-content;
 }
-.dropdown-content li > a {
-  padding: 5px;
-}
-.dropdown-content li > a > i {
-  width: fit-content;
-  margin: 0;
-  margin-right: 5px;
+
+.dropdown-icon {
+  display: inline;
 }
 
+.dropdown-icon i {
+  height: fit-content;
+  font-size: 1em;
+}
 @media only screen and (max-width: 992px) {
 
   .category-select {
@@ -135,7 +141,15 @@ nav .brand-logo {
 }
 
 .card .card-image .card-title {
-  background-color: rgba($color: #000000, $alpha: 0.4);
+  background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.card-action .comment {
+  margin-top: 0;
+}
+
+.card-action .like {
+  display: inline;
 }
 
 
