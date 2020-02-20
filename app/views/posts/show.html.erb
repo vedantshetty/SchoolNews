@@ -1,21 +1,6 @@
+<%= render 'shared/header' %><!--
 <section class ='section'>
   <div class ='container'>
-    <nav class='level'>
-      <div class='level-left'>
-        <p class='level-item'>
-          <strong>Actions</strong>
-        </p>
-      </div>
-
-      <div class='level-right'>
-        <p class='level-item'>
-          <%= link_to 'Edit', edit_post_path(@post), class: 'button' %>
-        </p>
-        <p class='level-item'>
-          <%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure?"},class:'button is-danger'%>
-        </p>
-      </div>
-    </nav>
     <hr />
     <div class='title has-text-centered'>
       <%= @post.title %>
@@ -37,3 +22,30 @@
   <h3 class='subtitle is-4'>Leave a reply</h3>
   <%= render 'comments/form' %>
 </section>
+
+-->
+
+<div class='container center-align'>
+  <!-- If post has an image -->
+  <div class='section '>
+      <div class='post-title'><h3><%= @post.title %></h3></div>
+      <div class ='post-category teal-text'><h6>News</h6></div>
+      <div class='meta'>
+        <div class='post-author'>
+          <i class="fa fa-user-circle"></i> Vedant Shetty
+        </div>
+
+        <div class='post-like'>
+          <i class="fa fa-heart"></i>
+        </div>
+
+        <div class='post-date'>
+          <i class="fa fa-calendar-o" aria-hidden="true"></i> <%= dateFormater(@post.created_at) %>
+        </div>
+        </div>
+  </div>
+
+  <div class='section post-body-container'>
+    <div class='content'><p class='flow-text'><%= @post.content %></p></div>
+  </div>
+</div>

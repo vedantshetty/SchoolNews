@@ -67,6 +67,9 @@ nav .brand-logo {
   font-size: large;
 }
 
+.back {
+  font-size: 1.7rem;
+}
 
 
 // Side bar styles
@@ -100,15 +103,24 @@ nav .brand-logo {
   margin-top: 0;
 }
 
-.meta p {
-  font-size: small;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 .content p {
   font-size: medium;
   margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-title .heading {
+  font-weight: 700;
+}
+
+.card-title .meta {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.card .card-image .card-title {
+  padding-bottom: 10px;
 }
 
 
@@ -146,4 +158,21 @@ nav .brand-logo {
     top: 50%;
     left: 40%;
   }
+}
+
+
+// Single Post Styles 
+
+.post-category {
+  font-style: italic;
+}
+
+#title-divider {
+  max-width: 30vw;
+}
+
+.post-date, .post-like, .post-author {
+  display: inline;
+  padding: 0.75rem;
+
 }
