@@ -1,14 +1,4 @@
 <%= render 'shared/header' %><!--
-<section class ='section'>
-  <div class ='container'>
-    <hr />
-    <div class='title has-text-centered'>
-      <%= @post.title %>
-    </div>
-    <div class= 'content'>
-      <%= @post.content %>
-  </div>
-</section>
 
 <section class=' section comments'>
   <div class='container'>
@@ -47,5 +37,16 @@
 
   <div class='section post-body-container'>
     <div class='content'><p class='flow-text'><%= @post.content %></p></div>
+  </div>
+
+  <div class='divider'></div>
+  <div class=' post-comment-container'>
+    <h4 class='grey-text left'><%= @post.comments.count %> Comments</h4>
+    <%= render @post.comments %>
+
+    <div class='comment-form'>
+      <h6>Leave a Reply</h6>
+      <%= render 'comments/form' %>
+    </div>
   </div>
 </div>

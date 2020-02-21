@@ -2,24 +2,14 @@
   <div class='navbar-fixed'>
     <nav class ='indigo darken-4'>
       <div class='nav-wrapper'>
-        <div class='backhide-on-med-and-down',  onclick='history.back()'><%= icon('fa', 'chevron-left') %>
-        </div>
-        <a href='#' class='brand-logo'>Atlas</a>
+        <div class='back hide-on-large-only',  onclick='history.back()'><%= icon('fa', 'chevron-left') %></div>
+        <a href='#' class='brand-logo'>News</a>
         <ul id='nav-mobile' class='right'>
           <li class='hide-on-med-and-down'><a href=''><%= icon('fa','edit') %> Create a new post</a></li>
           <li class='hide-on-med-and-down'>
             <a class='dropdown-trigger' href='#' data-target='profile'>Vedant Shetty<%= icon('fa','angle-down') %></a>
           </li>
-          <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%= icon('fa','bars') %></a></li>
         </ul>
       </div>
     </nav>
   </div>
-  <!-- Profile Dropdown -->
-  <ul id='profile' class='dropdown-content'>
-    <li><a href='#'>My Profile</a></li>
-    <li><a href='#'>Log Out</a></li>
-    <li class='divider' tabindex='-1'></li>
-    <li><a href='#'>F.A.Q</a></li>
-    <li><a href='#'> Help Center</a></li>
-  </ul>

@@ -73,10 +73,14 @@ nav .brand-logo {
   font-size: large;
 }
 
-.back {
+.back i {
   font-size: 1.7rem;
-  height: 1.7rem;
-  margin-left: 2.1em;
+  padding-left: 0.7em;
+  margin-top: 0.75em;
+}
+
+.back {
+  display: inline;
 }
 
 
