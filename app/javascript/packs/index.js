@@ -7,8 +7,8 @@ $(document).ready(
 );
 
 
-$('.rotate').click(function(){
-  $(this).toggleClass('down');
+$('.footer .category').click(function(){
+  $('.rotate').toggleClass('down');
   $('#footer-categories').slideToggle(500,'linear');
 })
 
