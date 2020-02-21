@@ -134,6 +134,8 @@ nav .brand-logo {
 }
 
 
+
+
 //Bottom Drawer 
 
 #footer-categories .carousel-item .icon {
@@ -142,11 +144,16 @@ nav .brand-logo {
 
 #footer-categories .carousel-item {
   height: 100px;
+  width: 100px;
   padding-bottom: 0.75em;
 }
 
 #footer-categories {
   height: 150px;
+  position: fixed;
+  bottom: 56px;
+  margin-bottom:0;
+  z-index: 990;
 }
 
 .hidden {

@@ -5,9 +5,3 @@ $(document).ready(
     $('.content').css("display",'block');
   }, 2000)
 );
-
-
-
-
-
-

@@ -2,7 +2,7 @@
     <nav class='indigo darken-4'>
       <div class='nav-wrapper'>
         <a href='#' class='footer-category'>News</a>
-        <div class='bottom-navigation fixed-action-btn' onclick='bottomDrawer()'>
+        <div class='bottom-navigation fixed-action-btn' onclick="$('#footer-categories').toggleClass('hidden');">
           <a class='btn-floating btn-large red'>
             <%= icon('fa','sort-up') %>
           </a>
@@ -24,7 +24,7 @@
     </nav>
   </div>
 
-  <div id='footer-categories' class='carousel card hidden'>
+  <div id='footer-categories' class='carousel card'>
     <div class='carousel-item center-align'>
       <div class='deep-orange-text icon'>
         <%= icon('fas','newspaper') %>
