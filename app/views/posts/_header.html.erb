@@ -5,33 +5,19 @@
         <a href='#' class='brand-logo'>Atlas</a>
 
         <ul id='nav-mobile' class='right'>
-          <li class='category-select input-field hide-on-med-and-down'>
-            <a class='dropdown-trigger' href='#' data-target = 'category'><%#= fa_icon 'angle-down', text:'News', right:true %></a>
+          <li class='category-select input-field'>
+            <a class='dropdown-trigger' href='#' data-target = 'category'><p>News </p> <%= icon('fa','angle-down')%></a>
           </li>
 
-
-          <li class=' hide-on-large-only'>
-            <a class='dropdown-trigger' href='#' data-target = 'vertical-elipses'><%= icon('fa','ellipsis-v')%></a>
-          </li>
-
-          <li class='search hide-on-med-and-down'><input id='search' type='search' placeholder='search' required></li>
-          <li class='hide-on-med-and-down'><a href=''><%= icon('fa','filter') %></a></li>
-
-          <li class='hide-on-med-and-down'><a href=''><%= icon('fa','edit') %> Create a new post</a></li>
+          <li class='search'><a href=''><%= icon('fa','search') %></a></li>
           <li class='hide-on-med-and-down'>
-            <a class='dropdown-trigger' href='#' data-target='profile'>Vedant Shetty<%=icon('fa','angle-down')%></a>
+            <a class='dropdown-trigger' href='#' data-target='profile'><p>Vedant Shetty </p><%=icon('fa','angle-down')%></a>
           </li>
           <li><a href="#" data-target="mobile-nav" class="sidenav-trigger"><%=icon('fa','bars') %></a></li>
         </ul>
       </div>
     </nav>
   </div>
-
-  <!-- Vertical Elipsis -->
-  <ul id='vertical-elipses' class='dropdown-content'>
-    <li><a href=''><div class='dropdown-icon'><%= icon('fa','search')%></div> Search</a></li>
-    <li><a href=''><div class='dropdown-icon'><%= icon('fa','filter')%></div> Filter</a></li>
-  </ul>
 
   <!-- Profile Dropdown -->
   <ul id='profile' class='dropdown-content'>
