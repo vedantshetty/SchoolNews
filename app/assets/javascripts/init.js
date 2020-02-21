@@ -10,11 +10,8 @@ $(document).on('turbolinks:load', function(){
     });
 
     $('.carousel').carousel({
-      'dist': '-20',
-      'numVisible': 5
+      numVisible:'4'
     });
-
-    console.log($(window).width()/200)
 
     $('.fixed-action-btn').floatingActionButton();
 })

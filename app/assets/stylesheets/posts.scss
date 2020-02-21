@@ -145,8 +145,8 @@ nav .brand-logo {
 #footer-categories .carousel-item {
   height: 100px;
   width: 100px;
-  padding-bottom: 0.75em;
 }
+
 
 #footer-categories {
   height: 150px;
@@ -157,7 +157,21 @@ nav .brand-logo {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+}
+
+
+.rotate {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.rotate.down {
+  transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
+  -ms-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
+  -webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
+
 }
 // Content Styles
 
