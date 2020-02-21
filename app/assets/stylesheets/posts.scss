@@ -9,7 +9,7 @@
 }
 
 .navbar-fixed li {
-  margin:5px
+  margin:5px;
 }
 
 nav .sidenav-trigger {
@@ -23,11 +23,32 @@ nav .brand-logo {
   padding-left: 25px;
 }
 
-.category-select a {
-  font-size: large;
-  padding-right: 1em;
+
+//Menus Item Styles
+#nav-mobile p {
+  margin: 0;
+  display: inline;
+  font-weight: 100;
+  font-size: 1.25rem;
+  padding-right: 0.05em;
+
 }
 
+#nav-mobile i {
+  position: relative;
+  top: 0.15em;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .category-select {
+    position: absolute;
+    padding-left: 2.75em;
+    left: 0;
+  }
+  
+}
 
 // Ellipsis Dropdown
 .dropdown-content:focus {
@@ -49,15 +70,6 @@ nav .brand-logo {
 .dropdown-icon i {
   height: fit-content;
   font-size: 1em;
-}
-@media only screen and (max-width: 992px) {
-
-  .category-select {
-    position: absolute;
-    padding-left: 25px;
-    left: 0;
-  }
-  
 }
 
 .fa-angle-down {
@@ -138,22 +150,27 @@ nav .brand-logo {
 
 //Bottom Drawer 
 
-#footer-categories .carousel-item .icon {
-  font-size: 48px;
+#footer-categories .item .icon {
+  font-size: 36px;
+  padding-top: 1.7rem;
 }
 
-#footer-categories .carousel-item {
+#footer-categories .item {
+  display: inline-block;
   height: 100px;
   width: 100px;
 }
 
 
 #footer-categories {
-  height: 150px;
+  height: 100px;
+  width: 100%;
   position: fixed;
   bottom: 56px;
   margin-bottom:0;
   z-index: 990;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .hidden {
@@ -168,9 +185,9 @@ nav .brand-logo {
 }
 
 .rotate.down {
-  transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
-  -ms-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
-  -webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-156);
+  transform:matrix(-1.00,0.00,-0.00,-1.00,0,-106);
+  -ms-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-106);
+  -webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-106);
 
 }
 // Content Styles
@@ -228,6 +245,14 @@ nav .brand-logo {
 @media only screen and (max-width:601px) {
   .content.container {
     margin-bottom: 60px;
+  }
+}
+
+
+@media only screen and (min-width:1000px) {
+
+  .content.container {
+    max-width: 700px;
   }
 }
 
