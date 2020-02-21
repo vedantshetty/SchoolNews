@@ -30,11 +30,21 @@
   max-width: 400px;
 }
 
+label {
+  padding-left: 1.1em;
+}
+
+.col .input-field label {
+  padding-left: 0;
+  left: 0;
+}
+
 .user_remember_me {
   padding-bottom: 0.75rem;
   padding-top: 0.25rem;
 }
 
+// Button Styling
 .waves-button-input {
   color: white;
   width: 20vw;
@@ -59,6 +69,14 @@
   }
   .row .m6.input-field.r input {
     float: right;
+  }
+
+  #wrapper {
+    border-radius: 50px;
+    width: fit-content;
+    box-shadow: -20px -20px 60px #d9d9d9, 20px 20px 60px #fff;
+    margin: 0 auto;
+    padding: 2em;
   }
 }
 
