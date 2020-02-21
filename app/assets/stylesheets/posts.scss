@@ -134,19 +134,24 @@ nav .brand-logo {
 }
 
 
-.bottom-drawer {
-  position: fixed;
-  width: 100%;
-  bottom: 60px;
-  height: fit-content;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+//Bottom Drawer 
+
+#footer-categories .carousel-item .icon {
+  font-size: 48px;
 }
 
-.bottom-codedrawer ul li {
-  display: inline;
+#footer-categories .carousel-item {
+  height: 100px;
+  padding-bottom: 0.75em;
 }
 
+#footer-categories {
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
 // Content Styles
 
 .title h2 {
@@ -198,6 +203,12 @@ nav .brand-logo {
   display: inline;
 }
 
+
+@media only screen and (max-width:601px) {
+  .content.container {
+    margin-bottom: 60px;
+  }
+}
 
 
 

@@ -1,10 +1,8 @@
-
-
-  <div class='footer hoverable hide-on-med-and-up'>
+<div class='footer hoverable hide-on-med-and-up'>
     <nav class='indigo darken-4'>
       <div class='nav-wrapper'>
         <a href='#' class='footer-category'>News</a>
-        <div class='bottom-navigation fixed-action-btn'>
+        <div class='bottom-navigation fixed-action-btn' onclick='bottomDrawer()'>
           <a class='btn-floating btn-large red'>
             <%= icon('fa','sort-up') %>
           </a>
@@ -26,12 +24,34 @@
     </nav>
   </div>
 
+  <div id='footer-categories' class='carousel card hidden'>
+    <div class='carousel-item center-align'>
+      <div class='deep-orange-text icon'>
+        <%= icon('fas','newspaper') %>
+      </div>
+      <a href="#" class='grey-text'>News</a>
+    </div>
 
-  <div id='footer-categories' class='bottom-drawer'>
-    <ul>
-      <li><a href="#">News</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">News</a></li>
-    </ul>
+    <div class='carousel-item center-align'>
+      <div class='yellow-text icon'>
+        <%= icon('fas','lightbulb') %>
+      </div>
+      <a href="#" class='grey-text'>Innovation</a>
+    </div>
+
+
+    <div class='carousel-item center-align'>
+      <div class='green-text icon'>
+        <%= icon('fas','graduation-cap') %>
+      </div>
+      <a href="#" class='grey-text'>Training</a>
+    </div>
+
+
+    <div class='carousel-item center-align'>
+      <div class='blue-text icon'>
+        <%= icon('fas','trophy') %>
+      </div>
+      <a href="#" class='grey-text'>Accolades</a>
+    </div>
   </div>
