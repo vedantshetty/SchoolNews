@@ -13,13 +13,9 @@
 }
 
 nav .sidenav-trigger {
-
-  margin: 0 0;
-}
-
-nav .sidenav-trigger {
   position: absolute;
   left: 0px;
+  margin: 0 0;
 }
 
 
@@ -106,6 +102,50 @@ nav .brand-logo {
 }
 
 
+// Footer Nav
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 56px;
+  z-index: 997;
+  box-shadow: -0px -10px 14px 4px rgba(0,0,0,0.14);
+  width: 100%;
+}
+
+.bottom-navigation {
+  left: 42vw;
+}
+
+.footer-category{
+  font-size: 1.7em;
+  margin-left: 4.75rem;
+} 
+
+.footer-hamburger {
+  bottom: 0.75em;
+  padding: 0.75em;
+}
+
+
+.footer-search {
+  position: fixed;
+  bottom: -1em;
+  right: 0.75em;
+}
+
+
+.bottom-drawer {
+  position: fixed;
+  width: 100%;
+  bottom: 60px;
+  height: fit-content;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.bottom-codedrawer ul li {
+  display: inline;
+}
 
 // Content Styles
 
