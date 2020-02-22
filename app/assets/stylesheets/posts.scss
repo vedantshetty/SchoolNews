@@ -139,11 +139,10 @@ nav .brand-logo {
   padding: 0.75em;
 }
 
-
 .footer-search {
   position: fixed;
   bottom: -1em;
-  right: 0.75em;
+  right: 0.75em
 }
 
 
@@ -188,6 +187,23 @@ nav .brand-logo {
   -webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,0,-106);
 
 }
+
+
+//Footer Dissapear on scroll
+
+
+.footer {
+  -moz-transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.out {
+  transform:translate(0,186px);
+  -ms-transform: translate(0,186px);
+  -webkit-transform: translate(0,186px);
+}
+
 // Content Styles
 
 .title h2 {
@@ -240,11 +256,6 @@ nav .brand-logo {
 }
 
 
-@media only screen and (max-width:601px) {
-  .content.container {
-    margin-bottom: 60px;
-  }
-}
 
 
 @media only screen and (min-width:1000px) {

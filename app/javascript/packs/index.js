@@ -7,10 +7,24 @@ $(document).ready(
 );
 
 
+// Bottom drawer open-close
 $('.footer .category').click(function(){
   $('.rotate').toggleClass('down');
   $('#footer-categories').slideToggle(200,'linear');
-})
+});
 
+let prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  //scroll up
+  if(prevScrollPos>currentScrollPos) {
+    $('.footer').removeClass('out');
+  }
+  //scroll down
+  else {
+    $('.footer').addClass('out');
+  }
+  prevScrollPos = currentScrollPos;
+}
 
 })

@@ -1,56 +1,57 @@
 <div class='footer hoverable hide-on-med-and-up'>
+    <!-- Footer Categories -->
+    <div id='footer-categories' class=' card hide-on-med-and-up'>
+      <div class='item center-align'>
+        <div class='deep-orange-text icon'>
+          <%= icon('fas','newspaper') %>
+        </div>
+        <a href="#" class='grey-text'>News</a>
+      </div>
+
+      <div class='item center-align'>
+        <div class='yellow-text icon'>
+          <%= icon('fas','lightbulb') %>
+        </div>
+        <a href="#" class='grey-text'>Innovation</a>
+      </div>
+
+
+      <div class='item center-align'>
+        <div class='green-text icon'>
+          <%= icon('fas','graduation-cap') %>
+        </div>
+        <a href="#" class='grey-text'>Training</a>
+      </div>
+
+
+      <div class='item center-align'>
+        <div class='blue-text icon'>
+          <%= icon('fas','trophy') %>
+        </div>
+        <a href="#" class='grey-text'>Accolades</a>
+      </div>
+    </div>
     <nav class='indigo darken-4'>
       <div class='nav-wrapper'>
         <div class='footer-category category'>News</div>
         <div class='bottom-navigation fixed-action-btn'>
-          <a class='btn-floating btn-large red rotate category'>
+          <a class='btn-floating waves-effect btn-large red rotate category'>
             <%= icon('fa','sort-up') %>
           </a>
         </div>
-        <li>
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger footer-hamburger">
-            <%=icon('fa','bars') %>
-          </a>
-        </li>
 
         <ul id='footer-nav'>
           <li>
-            <a class='footer-search'>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger footer-hamburger">
+              <%=icon('fa','bars') %>
+            </a>
+          </li>
+          <li>
+            <a class='footer-search right'>
               <%= icon('fa','search') %>
             </a>
           </li>
         </ul>
       </div>
     </nav>
-  </div>
-  <div id='footer-categories' class=' card hide-on-med-and-up'>
-    <div class='item center-align'>
-      <div class='deep-orange-text icon'>
-        <%= icon('fas','newspaper') %>
-      </div>
-      <a href="#" class='grey-text'>News</a>
-    </div>
-
-    <div class='item center-align'>
-      <div class='yellow-text icon'>
-        <%= icon('fas','lightbulb') %>
-      </div>
-      <a href="#" class='grey-text'>Innovation</a>
-    </div>
-
-
-    <div class='item center-align'>
-      <div class='green-text icon'>
-        <%= icon('fas','graduation-cap') %>
-      </div>
-      <a href="#" class='grey-text'>Training</a>
-    </div>
-
-
-    <div class='item center-align'>
-      <div class='blue-text icon'>
-        <%= icon('fas','trophy') %>
-      </div>
-      <a href="#" class='grey-text'>Accolades</a>
-    </div>
   </div>

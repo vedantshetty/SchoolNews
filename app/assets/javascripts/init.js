@@ -7,6 +7,10 @@ $(document).on('turbolinks:load', function(){
     $('select').formSelect();
   
     $('.sidenav').sidenav({
+      'onOpenStart': function(){
+        $('.rotate').removeClass('down');
+        $('#footer-categories').slideUp(200,'linear');
+      }
     });
 
     $('.carousel').carousel({
