@@ -30,7 +30,7 @@
   
   <!-- Category Dropdown -->
   <ul id='category' class='dropdown-content'>
-    <li><a href='#'>Innovation</a></li>
-    <li><a href='#'>Training</a></li>
-    <li><a href='#'>Accolades</a></li>
+    <% @categories.each do |category| %>
+      <li><a href='#'><%=category.name %></a></li>
+    <% end %>
   </ul>

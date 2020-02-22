@@ -1,36 +1,19 @@
+<% colors = ['deep-purple','pink','amber','light-blue','deep-orange','blue-grey','red','lime','orange','purple','teal','indigo','yellow','blue','green','light-blue','cyan'] %>
 <div class='footer hoverable hide-on-med-and-up'>
     <!-- Footer Categories -->
     <div id='footer-categories' class=' card hide-on-med-and-up'>
-      <div class='item center-align'>
-        <div class='deep-orange-text icon'>
-          <%= icon('fas','newspaper') %>
+      <% @categories.each do |category| %>
+        <div class='item center-align'>
+          <div class='<%="#{colors[(category.id-1)%colors.length]}-text"%> icon'>
+            <% iconTags = iconize(category.icon) %>
+            <% print iconTags %>
+            <%= icon(iconTags[0], iconTags[1]) %>
+          </div>
+          <a href="#" class='grey-text'><%=category.name%></a>
         </div>
-        <a href="#" class='grey-text'>News</a>
-      </div>
-
-      <div class='item center-align'>
-        <div class='yellow-text icon'>
-          <%= icon('fas','lightbulb') %>
-        </div>
-        <a href="#" class='grey-text'>Innovation</a>
-      </div>
-
-
-      <div class='item center-align'>
-        <div class='green-text icon'>
-          <%= icon('fas','graduation-cap') %>
-        </div>
-        <a href="#" class='grey-text'>Training</a>
-      </div>
-
-
-      <div class='item center-align'>
-        <div class='blue-text icon'>
-          <%= icon('fas','trophy') %>
-        </div>
-        <a href="#" class='grey-text'>Accolades</a>
-      </div>
+      <% end %>
     </div>
+
     <nav class='indigo darken-4'>
       <div class='nav-wrapper'>
         <div class='footer-category category'>News</div>
