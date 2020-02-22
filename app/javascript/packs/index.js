@@ -7,10 +7,18 @@ $(document).ready(
 );
 
 
-// Bottom drawer open-close
+// Bottom drawer half open-close
 $('.footer .category').click(function(){
   $('.rotate').toggleClass('down');
   $('#footer-categories').slideToggle(200,'linear');
+});
+
+
+//Full Drawer Full Open
+$('.footer .category').bind('taphold',function(){
+  console.log('taphold');
+  // $('.rotate').toggleClass('down');
+  // $('#footer-categories').slideToggle(200,'linear');
 });
 
 let prevScrollPos = window.pageYOffset;
@@ -23,10 +31,9 @@ window.onscroll = function() {
   //scroll down
   else {
     $('.rotate').removeClass('down');
-    $('#footer-categories').slideUp(200,'linear');
-    this.setTimeout(function(){
-    $('.footer').addClass('out');
-    },200)
+    $('#footer-categories').slideUp(200,'linear', function(){
+      $('.footer').addClass('out');
+      });
   }
   prevScrollPos = currentScrollPos;
 }
