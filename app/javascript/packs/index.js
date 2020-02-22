@@ -22,7 +22,11 @@ window.onscroll = function() {
   }
   //scroll down
   else {
+    $('.rotate').removeClass('down');
+    $('#footer-categories').slideUp(200,'linear');
+    this.setTimeout(function(){
     $('.footer').addClass('out');
+    },200)
   }
   prevScrollPos = currentScrollPos;
 }

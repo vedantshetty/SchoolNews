@@ -190,8 +190,6 @@ nav .brand-logo {
 
 
 //Footer Dissapear on scroll
-
-
 .footer {
   -moz-transition: all .4s linear;
   -webkit-transition: all .4s linear;
@@ -199,9 +197,9 @@ nav .brand-logo {
 }
 
 .out {
-  transform:translate(0,186px);
-  -ms-transform: translate(0,186px);
-  -webkit-transform: translate(0,186px);
+  transform:translate(0,86px);
+  -ms-transform: translate(0,86px);
+  -webkit-transform: translate(0,86px);
 }
 
 // Content Styles
