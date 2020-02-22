@@ -11,10 +11,14 @@
       <a href='#'><span class='white-text name center-align'><%= "#{current_user.firstName} #{current_user.lastName}" %></span></a>
     </div>
   </li>
-  <li><a href='' class='waves-effect'><%= icon('fa','edit') %> Create a new post</a></li>
-  <li><%= link_to(destroy_user_session_path, method: :delete) do %>
-      <%= icon('fas','sign-out-alt') %>
-      Log Out
+  <li><%= link_to(new_post_path, class:'waves-effect') do %>
+        <%=icon('fa','edit') %>
+        Create a new post
+      <% end %>
+  <li><%= link_to(destroy_user_session_path, method: :delete, class:'waves-effect') do %>
+        <%= icon('fas','sign-out-alt') %>
+        Log Out
+      <% end %>
   </li>
   <li class='subheader' tabindex='-1'>Categories</li>
   <% @categories.each do |category| %>
