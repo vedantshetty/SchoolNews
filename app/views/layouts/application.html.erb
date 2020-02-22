@@ -24,28 +24,6 @@
     <% if alert %>
       <p class ='alert alert-danger has-text-centered'><%= alert %></p>
     <% end %>
-    
-  <!-- Side Nav bar -->
-    <ul class="sidenav" id="mobile-nav">
-      <li>
-        <div class='user-view'>
-          <div class='background'>
-            <%= image_tag('profile-background.jpg') %>
-          </div>
-          <a href='#'><span class='white-text name center-align'><%= "#{current_user.firstName} #{current_user.lastName}" %></span></a>
-        </div>
-      </li>
-      <li><a href='' class='waves-effect'><%= icon('fa','edit') %> Create a new post</a></li>
-      <li><a href="" class='waves-effect'><%= icon('fas','sign-out-alt')%>Log Out</a></li>
-      <li class='subheader' tabindex='-1'>Categories</li>
-      <% @categories.each do |category| %>
-        <% iconTags = iconize(category.icon) %>
-        <li style='padding-left:5px'><a href='' class='waves-effect'><%= icon(iconTags[0],iconTags[1])%> <%=category.name %></a></li>
-      <% end %>
-      <li><div class='divider'></div></li>
-      <li><a href="" class='waves-effect'><%= icon('fas','question-circle')%> Frequently Asked Questions</a></li>
-      <li><a href="" class='waves-effect'><%= icon('fa', 'info-circle') %>Help Center</a></li>
-    </ul>
   <%= yield %>
 
 </body>
