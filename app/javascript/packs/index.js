@@ -9,7 +9,7 @@ $(document).ready(
 
 $('.footer .category').click(function(){
   $('.rotate').toggleClass('down');
-  $('#footer-categories').slideToggle(500,'linear');
+  $('#footer-categories').slideToggle(200,'linear');
 })
 
 
