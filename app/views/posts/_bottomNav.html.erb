@@ -6,7 +6,6 @@
         <div class='item center-align'>
           <div class='<%="#{colors[(category.id-1)%colors.length]}-text"%> icon'>
             <% iconTags = iconize(category.icon) %>
-            <% print iconTags %>
             <%= icon(iconTags[0], iconTags[1]) %>
           </div>
           <a href="#" class='grey-text'><%=category.name%></a>
