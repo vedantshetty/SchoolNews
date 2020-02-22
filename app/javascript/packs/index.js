@@ -13,14 +13,6 @@ $('.footer .category').click(function(){
   $('#footer-categories').slideToggle(200,'linear');
 });
 
-
-//Full Drawer Full Open
-$('.footer .category').bind('taphold',function(){
-  console.log('taphold');
-  // $('.rotate').toggleClass('down');
-  // $('#footer-categories').slideToggle(200,'linear');
-});
-
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
