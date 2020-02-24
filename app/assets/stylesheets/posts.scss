@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
+// Font Specific Changes 
+b, strong {
+  font-weight: 700;
+}
+
 // Navbar styles
 .select-dropdown {
   color: white;
@@ -309,6 +314,19 @@ nav .brand-logo {
 .post-date, .post-like, .post-author {
   display: inline;
   padding: 0.75rem;
+}
+
+
+// Comment Style
+
+.comment-date {
+  font-size: 0.9em;
+  display: inline;
+}
+
+.card-action {
+  display: inline;
+  padding-left: 0.75em;
 }
 
 

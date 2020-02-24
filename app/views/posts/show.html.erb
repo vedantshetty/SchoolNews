@@ -15,9 +15,9 @@
 
 -->
 
-<div class='container center-align'>
+<div class='container'>
   <!-- If post has an image -->
-  <div class='section '>
+  <div class='section center-align'>
       <div class='post-title'><h3><%= @post.title %></h3></div>
       <div class ='post-category teal-text'><h6><%=@post.category.name %></h6></div>
       <div class='meta'>
@@ -35,15 +35,15 @@
         </div>
   </div>
 
-  <div class='section post-body-container left-align'>
+  <div class='section post-body-container'>
     <div class='content'><p class='flow-text'><%= @post.content %></p></div>
   </div>
   <div class='divider'></div>
 
   <div class=' post-comment-container'>
-    <h4 class='grey-text'><%= pluralize @post.comments.count, 'Comment' %></h4>
+    <h4 class='grey-text center-align'><%= pluralize @post.comments.count, 'Comment' %></h4>
       <%= render @post.comments %>
-    <div class='comment-form'>
+    <div class='comment-form center-align'>
       <%= render 'comments/form' %>
     </div>
   </div>

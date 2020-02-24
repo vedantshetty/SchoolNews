@@ -1,16 +1,19 @@
-
-
-<div class='row'>
-  <div class='col s12'>
-    <div class='card'>
-      <div class='card-content'>
-        <span class='card-title'><%=comment.user.adid %></span>
-        <p><%=comment.comment%></p>
+<% if comment.id %>
+  <div class='row'>
+    <div class='col s12'>
+      <div class='comment-author'>
+        <strong><%="#{comment.user.firstName} #{comment.user.lastName}" %></strong>
+      </div>
+      <div class='comment-date grey-text'>
+        <%=dateFormater(comment.created_at)%>
       </div>
       <div class='card-action'>
-        <span class='date'>27th Feb</span>
-        <span class='comment-delete'><%=link_to 'Delete', [comment.post, comment], method: :delete, class: 'button is-danger', data: {confirm: 'Are you sure?'} %></span>
+        <span class='comment-delete'>
+          <%=link_to 'Delete', [comment.post, comment], method: :delete, class: 'button is-danger', data: {confirm: 'Are you sure?'} %>
+        </span>
       </div>
+      <div class='comment-body grey-text text-darken-3 flow-text'><%=comment.comment%></div>
+
     </div>
   </div>
-</div>
+<% end %>
