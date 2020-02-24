@@ -7,7 +7,7 @@
         <ul id='nav-mobile' class='right'>
           <li class='category-select input-field'>
             <a class='dropdown-trigger' href='#' data-target = 'category'>
-              <p>News </p> <%= icon('fa','angle-down')%>
+              <p><%= @categories.find(params[:id]).name %> </p> <%= icon('fa','angle-down')%>
             </a>
           </li>
 
@@ -33,6 +33,9 @@
   <!-- Category Dropdown -->
   <ul id='category' class='dropdown-content'>
     <% @categories.each do |category| %>
-      <li><%= link_to category.name, category %></li>
+      
+      <% unless category.id == params[:id].to_i %>
+        <li><%= link_to category.name, category %></li>
+      <% end %>
     <% end %>
   </ul>
