@@ -8,7 +8,15 @@
                       wrapper_html: {class:'input-field'}%>
         </div>
       </div>
-      <div class ='field'>
+
+      <div class='field'>
+        <div class='control'>
+          <%= f.input :category,
+                      selected: 1,
+                      :collection=>Category.all.order('created_at') %>
+        </div>
+      </div>
+      <div class ='field section'>
         <div class ='control'>
           <%= f.rich_text_area :content,
                                 input_html: {class:'textarea materialize-textarea'},
@@ -16,7 +24,14 @@
                                 label_html: {class:'label'} %>
         </div>
       </div>
-      <%= f.button :submit , class:'button is-primary' %>
+      <div class='form-actions center-align section'>
+      <%= f.button :submit , class:'button waves-effect waves-light is-primary' %>
     <% end %>
   </div>
 </div>
+
+
+<script>
+// Temp
+    $('#post_category').formSelect();
+</script>

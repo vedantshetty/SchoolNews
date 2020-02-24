@@ -15,7 +15,6 @@ before_action :authenticate_user!
 
   def create
     @post = Post.new(whitelisted_post_params)
-
     if @post.save
       redirect_to @post
     else
