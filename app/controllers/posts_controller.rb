@@ -14,7 +14,7 @@ before_action :authenticate_user!
   end
 
   def create
-    @post = Post.new(whitelisted_post_params)
+    @post = current_user.posts.new(whitelisted_post_params)
     if @post.save
       redirect_to @post
     else
@@ -26,7 +26,7 @@ before_action :authenticate_user!
   end
 
   def update
-    if @post.update(whitelisted_post_params)
+    if @post.update(whitelisted_post_params.merge(user_id: current_user.id))
       redirect_to @post
     else
       render 'edit'
@@ -41,7 +41,7 @@ before_action :authenticate_user!
   private 
 
   def whitelisted_post_params
-    params.require(:post).permit(:title,:content)
+    params.require(:post).permit(:title,:content,:category_id)
   end
 
   def find_post
