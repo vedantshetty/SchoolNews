@@ -17,7 +17,7 @@
 
     <nav class='indigo darken-4'>
       <div class='nav-wrapper'>
-        <div class='footer-category category'>News</div>
+        <div class='footer-category category'><%= @categories.find(params[:id]).name%></div>
         <div class='bottom-navigation fixed-action-btn'>
           <a class='btn-floating waves-effect btn-large red rotate category'>
             <%= icon('fa','sort-up') %>
