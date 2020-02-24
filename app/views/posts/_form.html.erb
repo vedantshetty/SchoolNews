@@ -18,9 +18,9 @@
       </div>
       <div class ='field section'>
         <div class ='control'>
-          <%= f.input :content,
-                      as: :text,
-                      input_html: {class:'textarea materialize-textarea'} %>
+          <%= f.rich_text_area :content,
+                                wrapper: false,
+                                input_html: {class:'textarea materialize-textarea'} %>
         </div>
       </div>
       <div class='form-actions center-align section'>
