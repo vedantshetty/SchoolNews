@@ -13,9 +13,9 @@
 
           <li class='search'><a href=''><%= icon('fa','search') %></a></li>
           <li class='hide-on-med-and-down'>
-            <a class='dropdown-trigger' href='#' data-target='profile'><p>Vedant Shetty </p><%=icon('fa','angle-down')%></a>
+            <a class='dropdown-trigger' href='#' data-target='profile'><p><%= "#{current_user.firstName} #{current_user.lastName}"%></p><%=icon('fa','angle-down')%></a>
           </li>
-          <li><div data-target="mobile-nav" class="sidenav-trigger"><%=icon('fa','bars') %></div></li>
+          <li><a data-target="mobile-nav" class="sidenav-trigger"><%=icon('fa','bars') %></a></li>
         </ul>
       </div>
     </nav>
