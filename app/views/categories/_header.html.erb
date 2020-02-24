@@ -24,7 +24,7 @@
   <!-- Profile Dropdown -->
   <ul id='profile' class='dropdown-content'>
     <li><a href='#'>My Profile</a></li>
-    <li><a href='#'>Log Out</a></li>
+    <li><%= link_to('Log Out',destroy_user_session_path, method: :delete, class:'waves-effect')%></li>
     <li class='divider' tabindex='-1'></li>
     <li><a href='#'>F.A.Q</a></li>
     <li><a href='#'> Help Center</a></li>
