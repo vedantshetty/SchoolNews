@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(whitelisted_comment_params)
+    @comment = @post.comments.create(whitelisted_comment_params.merge(user_id:current_user.id))
     redirect_to post_path(@post)
   end
 
@@ -18,6 +18,6 @@ class CommentsController < ApplicationController
 
   private 
   def whitelisted_comment_params()
-    params[:comment].permit(:name, :comment)
+    params[:comment].permit(:comment)
   end
 end

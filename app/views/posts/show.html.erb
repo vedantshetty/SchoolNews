@@ -19,34 +19,32 @@
   <!-- If post has an image -->
   <div class='section '>
       <div class='post-title'><h3><%= @post.title %></h3></div>
-      <div class ='post-category teal-text'><h6>News</h6></div>
+      <div class ='post-category teal-text'><h6><%=@post.category.name %></h6></div>
       <div class='meta'>
         <div class='post-author'>
-          <i class="fa fa-user-circle"></i> Vedant Shetty
+          <%=icon("fa","user-circle")%> <%="#{@post.user.firstName} #{@post.user.lastName}" %>
         </div>
 
         <div class='post-like'>
-          <i class="fa fa-heart"></i>
+          <%= icon('far','heart') %>
         </div>
 
         <div class='post-date'>
-          <i class="fa fa-calendar-o" aria-hidden="true"></i> <%= dateFormater(@post.created_at) %>
+          <%=icon("far","calendar") %> <%= dateFormater(@post.created_at) %>
         </div>
         </div>
   </div>
 
-  <div class='section post-body-container'>
+  <div class='section post-body-container left-align'>
     <div class='content'><p class='flow-text'><%= @post.content %></p></div>
   </div>
-
   <div class='divider'></div>
-  <div class=' post-comment-container'>
-    <h4 class='grey-text left'><%= @post.comments.count %> Comments</h4>
-    <%#= render @post.comments %>
 
+  <div class=' post-comment-container'>
+    <h4 class='grey-text'><%= pluralize @post.comments.count, 'Comment' %></h4>
+      <%= render @post.comments %>
     <div class='comment-form'>
-      <h6>Leave a Reply</h6>
-      <%#= render 'comments/form' %>
+      <%= render 'comments/form' %>
     </div>
   </div>
 </div>
