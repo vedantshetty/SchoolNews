@@ -1,0 +1,39 @@
+<% colors = ['deep-purple','pink','amber','light-blue','deep-orange','blue-grey','red','lime','orange','purple','teal','indigo','yellow','blue','green','light-blue','cyan'] %>
+<div class='footer hoverable hide-on-med-and-up'>
+    <!-- Footer Categories -->
+    <div id='footer-categories' class=' card hide-on-med-and-up'>
+      <% @categories.each do |category| %>
+        <div class='item center-align'>
+          <div class='<%="#{colors[(category.id-1)%colors.length]}-text"%> icon'>
+            <% iconTags = iconize(category.icon) %>
+            <%= icon(iconTags[0], iconTags[1]) %>
+          </div>
+          <a href="#" class='grey-text'><%=category.name%></a>
+        </div>
+      <% end %>
+    </div>
+
+    <nav class='indigo darken-4'>
+      <div class='nav-wrapper'>
+        <div class='footer-category category'>News</div>
+        <div class='bottom-navigation fixed-action-btn'>
+          <a class='btn-floating waves-effect btn-large red rotate category'>
+            <%= icon('fa','sort-up') %>
+          </a>
+        </div>
+
+        <ul id='footer-nav'>
+          <li>
+            <a href="" data-target="mobile-nav" class="sidenav-trigger footer-hamburger">
+              <%=icon('fa','bars') %>
+            </a>
+          </li>
+          <li>
+            <a class='footer-search right'>
+              <%= icon('fa','search') %>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
