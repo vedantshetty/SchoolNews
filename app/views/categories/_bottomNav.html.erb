@@ -3,13 +3,15 @@
     <!-- Footer Categories -->
     <div id='footer-categories' class=' card hide-on-med-and-up'>
       <% @categories.each do |category| %>
-        <div class='item center-align'>
-          <div class='<%="#{colors[(category.id-1)%colors.length]}-text"%> icon'>
-            <% iconTags = iconize(category.icon) %>
-            <%= icon(iconTags[0], iconTags[1]) %>
+        <%= link_to category do %>
+          <div class='item center-align'>
+            <div class='<%="#{colors[(category.id-1)%colors.length]}-text"%> icon'>
+              <% iconTags = iconize(category.icon) %>
+              <%= icon(iconTags[0], iconTags[1]) %>
+            </div>
+            <div class='grey-text'><%=category.name%></div>
           </div>
-          <a href="#" class='grey-text'><%=category.name%></a>
-        </div>
+        <% end %>
       <% end %>
     </div>
 
