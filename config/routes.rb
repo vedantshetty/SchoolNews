@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'categories#index'
 
   resources :categories 
-  resources :posts do
+  resources :posts, except: :index do
     resources :comments
   end
   

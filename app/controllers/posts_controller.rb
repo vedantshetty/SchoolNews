@@ -1,11 +1,6 @@
 class PostsController < ApplicationController
 before_action :find_post, only: [:show, :edit, :update, :destroy]
 before_action :authenticate_user!
-  def index
-    @categories = Category.all.order('created_at')
-    @posts = Post.where("created_at>=?",30.days.ago).order('created_at DESC')
-  end
-
   def new
     @post = Post.new
   end
