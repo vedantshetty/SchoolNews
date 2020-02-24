@@ -18,11 +18,15 @@
 
   <body>
     <% if notice %>
-      <p class='alert alert-success has-text-centered'><%= notice %></p>
+      <script>
+        M.toast({html:'<%=notice %>',classes:'notice toast'})
+      </script>
     <% end %>
 
     <% if alert %>
-      <p class ='alert alert-danger has-text-centered'><%= alert %></p>
+      <script>
+        M.toast({html:"<%=alert %>", classes:'alert toast'})
+      </script>
     <% end %>
   <%= yield %>
 
