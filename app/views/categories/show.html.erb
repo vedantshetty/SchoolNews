@@ -23,7 +23,12 @@
   <li class='subheader' tabindex='-1'>Categories</li>
   <% @categories.each do |category| %>
     <% iconTags = iconize(category.icon) %>
-    <li style='padding-left:5px'><a href='' class='waves-effect'><%= icon(iconTags[0],iconTags[1])%> <%=category.name %></a></li>
+      <li style='padding-left:5px'>
+        <%= link_to category, class:'waves-effect' do %>
+          <%= icon(iconTags[0],iconTags[1])%>
+          <%=category.name %>
+        <% end %>
+      </li>
   <% end %>
   <li><div class='divider'></div></li>
   <li><a href="" class='waves-effect'><%= icon('fas','question-circle')%> Frequently Asked Questions</a></li>
