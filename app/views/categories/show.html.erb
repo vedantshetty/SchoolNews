@@ -54,7 +54,7 @@
 
               <p class='flow-text meta'>Published by <span class='blue-text'><%="#{post.user.firstName} #{post.user.lastName}"%></span> on <%=dateFormater(post.created_at) %></p>
         </span>
-        <%= link_to(post, class:"btn-floating halfway-fab waves-effect waves-light red") do %>
+        <%= link_to(post_path(post,anchor:'comments') ,class:"btn-floating halfway-fab waves-effect waves-light red") do %>
           <%= icon('fa', 'comments') %>
         <% end %>
       </div>
@@ -62,8 +62,8 @@
         <p class='flow-text grey-text text-darken-4'><%=truncate(strip_tags(post.content.to_s),length:150,omission:'...')%></p>
       </div>
       <div class='card-action'>
-        <p class='like'><%= icon('far','heart')%> 121 likes</p>
-        <p class='right comment'> <%= pluralize post.comments.count, 'Comment' %></p>
+        <p class='like grey-text darken-4'><%= icon('far','heart')%> 121 likes</p>
+        <p class='right comment'> <%= link_to "#{pluralize post.comments.count, 'Comment'}", post_path(post,anchor:'comments'), class:'grey-text darken-4' %></p>
       </div>
     </div>
   <% end %>

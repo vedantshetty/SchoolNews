@@ -40,7 +40,7 @@
   </div>
   <div class='divider'></div>
 
-  <div class=' post-comment-container'>
+  <div class=' post-comment-container' id='comments'>
     <h4 class='grey-text center-align'><%= pluralize @post.comments.count, 'Comment' %></h4>
       <%= render @post.comments %>
     <div class='comment-form center-align'>
