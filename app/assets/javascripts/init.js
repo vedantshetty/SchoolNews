@@ -10,6 +10,5 @@ $(document).on('turbolinks:load', function(){
         $('#footer-categories').slideUp(200,'linear');
       }
     });
-
     $('.fixed-action-btn').floatingActionButton();
 })

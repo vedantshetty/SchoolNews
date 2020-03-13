@@ -15,6 +15,7 @@ require("@rails/actiontext")
 
 
 require("packs/index")
+require("packs/post")
 require('packs/registration')
 require('jquery')
 
