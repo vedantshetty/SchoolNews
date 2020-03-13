@@ -4,11 +4,9 @@ $(document).on('turbolinks:load', function(){
     'coverTrigger': false
   });
   
-    $('.sidenav').sidenav({
-      'onOpenStart': function(){
-        $('.rotate').removeClass('down');
-        $('#footer-categories').slideUp(200,'linear');
-      }
-    });
+  $('.sidenav').sidenav({
+    edge: 'right',
+    draggable:'false',
+  });
     $('.fixed-action-btn').floatingActionButton();
 })

@@ -1,12 +1,13 @@
 <div class='container'>
   <!-- If post has an image -->
   <div class='section center-align'>
-      <div class='post-title flow-text valign-wrapper'>
+      <div class='post-title flow-text valign-wrapper translucent'>
         <div class="back hide-on-large-only", style="display:none",  onclick='history.back()'>
           <%= icon('fa', 'arrow-left') %>
         </div>
         <h4><%= @post.title %></h4>
       </div>
+
       <div class ='post-category teal-text'><h6><%=@post.category.name %></h6></div>
       <div class='meta'>
         <div class='post-author'>

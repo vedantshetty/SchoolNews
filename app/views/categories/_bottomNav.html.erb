@@ -1,6 +1,37 @@
 <% colors = ['deep-purple','pink','amber','light-blue','deep-orange','blue-grey','red','lime','orange','purple','teal','indigo','yellow','blue','green','light-blue','cyan'] %>
 <div class='footer hoverable hide-on-med-and-up'>
-    <!-- Footer Categories -->
+  <nav class='translucent'>
+    <div class='nav-wrapper row'>
+      <div class='category center-align col s3'>
+        <div class='icon deep-purple-text'>
+          <%= link_to(root_path, class:'waves-effect red-text') do %>
+           <%= icon('fas','home') %>
+          <% end %>
+        </div>
+
+      </div>
+
+      <div class='category center-align col s3'>
+        <div class='icon'>
+          <%= link_to(new_post_path, class:'waves-effect red-text') do %>
+            <%= icon('fas','plus-circle') %>
+          <% end %>
+          </div>
+
+      </div>
+
+      <div class='category center-align col s3'>
+        <div class='icon orange-text'><%= icon('fas','search') %></div>
+      </div>
+
+      <div class='category center-align col s3'>
+        <a class=' icon yellow-text text-darken-4 sidenav-trigger' data-target='mobile-nav'>
+          <%= icon('fas','ellipsis-h') %>
+        </a>
+      </div>
+    </div>
+  </nav>
+<!--
     <div id='footer-categories' class=' card hide-on-med-and-up'>
       <% @categories.each do |category| %>
         <%= link_to category do %>
@@ -14,28 +45,6 @@
         <% end %>
       <% end %>
     </div>
-
-    <nav class='indigo darken-4'>
-      <div class='nav-wrapper'>
-        <div class='footer-category category'><%= params[:id]? @categories.find(params[:id]).name : 'Trending'%></div>
-        <div class='bottom-navigation fixed-action-btn'>
-          <a class='btn-floating waves-effect btn-large red rotate category'>
-            <%= icon('fa','sort-up') %>
-          </a>
-        </div>
-
-        <ul id='footer-nav'>
-          <li>
-            <a data-target="mobile-nav" class="sidenav-trigger footer-hamburger">
-              <%=icon('fa','bars') %>
-            </a>
-          </li>
-          <li>
-            <a class='footer-search right'>
-              <%= icon('fa','search') %>
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
+-->
   </div>

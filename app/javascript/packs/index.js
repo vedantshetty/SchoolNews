@@ -6,28 +6,4 @@ $(document).ready(
   }, 2000)
 );
 
-
-// Bottom drawer half open-close
-$('.footer .category').click(function(){
-  $('.rotate').toggleClass('down');
-  $('#footer-categories').slideToggle(200,'linear');
-});
-
-let prevScrollPos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  //scroll up
-  if(prevScrollPos>currentScrollPos) {
-    $('.footer').removeClass('out');
-  }
-  //scroll down
-  else {
-    $('.rotate').removeClass('down');
-    $('#footer-categories').slideUp(200,'linear', function(){
-      $('.footer').addClass('out');
-      });
-  }
-  prevScrollPos = currentScrollPos;
-}
-
 })
