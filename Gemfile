@@ -43,7 +43,7 @@ group :development, :test do
   # Make errors better looking and more informational
 
 # Use sqlite3 as the database for Active Record
-  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'better_errors', '~> 2.8'
 end
 
 group :development do
